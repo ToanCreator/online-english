@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phán Đoán Thần Sầu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="welcome-screen" class="screen">
+        <h1 class="game-title">Phán Đoán Thần Sầu</h1>
+        <button id="join-room-btn">Tham Gia Phòng</button>
+        <button id="create-room-btn">Tạo Phòng</button>
+    </div>
+
+    <div id="join-room-screen" class="screen hidden">
+        <h2>Danh sách phòng</h2>
+        <ul id="room-list"></ul>
+        <button id="back-to-welcome-btn">Quay lại</button>
+    </div>
+
+    <div id="create-room-screen" class="screen hidden">
+        <h2>Tạo phòng mới</h2>
+        <label for="room-name-input">Tên phòng:</label>
+        <input type="text" id="room-name-input" placeholder="Nhập tên phòng">
+        <label for="player-count-input">Số người chơi (4-16):</label>
+        <input type="number" id="player-count-input" min="4" max="16" value="4">
+        <button id="create-btn">Tạo phòng</button>
+        <button id="back-to-welcome-btn-2">Quay lại</button>
+    </div>
+
+    <div id="game-screen" class="screen hidden">
+        <div class="header">
+            <h1 class="game-title">Phán Đoán Thần Sầu</h1>
+            <div class="round-info">Vòng <span id="round-number">1</span> / 10</div>
+            <div class="timer">Thời gian còn lại: <span id="time-left">45s</span></div>
+        </div>
+        
+        <div class="main-content">
+            <div id="game-status" class="status-message"></div>
+            <div id="player-character-selection" class="hidden">
+                <h3>Chọn nhân vật của bạn</h3>
+                <div id="character-selection-grid"></div>
+                <button id="confirm-character-btn">Xác nhận</button>
+            </div>
+            <div id="character-list" class="character-grid hidden"></div>
+            <div id="action-panel" class="action-panel hidden"></div>
+            <div id="info-panel" class="info-panel hidden"></div>
+            <div id="chat-box" class="chat-box hidden">
+                <div id="chat-messages" class="chat-messages"></div>
+                <input type="text" id="chat-input" placeholder="Nhập tin nhắn...">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
