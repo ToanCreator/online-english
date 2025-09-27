@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English Vocabulary - Hub</title>
+    <!-- Tải Tailwind CSS để tạo giao diện nhanh chóng và đẹp mắt -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tải phông chữ từ Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS tùy chỉnh để thêm các hiệu ứng và phong cách độc đáo */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Nền xám đen */
+            /* Thêm một lớp nền gradient tinh tế */
+            background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.05) 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+
+        /* Phong cách cho tiêu đề chính */
+        .main-title {
+            font-family: 'Bebas Neue', cursive;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        /* Lớp giả để tạo họa tiết sọc chéo và chấm tròn */
+        .card-pattern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* Kết hợp họa tiết chấm tròn và sọc chéo */
+            background-image: 
+                /* Chấm tròn trắng */
+                radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+                /* Sọc chéo trắng */
+                repeating-linear-gradient(
+                    45deg,
+                    rgba(255, 255, 255, 0.08),
+                    rgba(255, 255, 255, 0.08) 2px,
+                    transparent 2px,
+                    transparent 12px
+                );
+            background-size: 30px 30px, auto; /* Kích thước cho từng họa tiết */
+            z-index: 0;
+            opacity: 0.8;
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        
+        /* Hiệu ứng khi di chuột vào */
+        .link-card:hover .card-pattern::before {
+            opacity: 0.4;
+            transform: scale(1.1); /* Phóng to nhẹ họa tiết */
+        }
+
+        /* Đảm bảo nội dung thẻ nằm trên lớp họa tiết */
+        .card-content {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="text-white">
+
+    <div class="container mx-auto px-4 py-8 md:py-16">
+        <!-- Tiêu đề chính của trang web -->
+        <h1 class="main-title text-5xl md:text-7xl font-bold text-center mb-12 animate-pulse">
+            TOÀN CREATOR
+        </h1>
+
+        <!-- Vùng chứa các link sẽ được tạo bằng JavaScript -->
+        <div id="links-container" class="flex flex-col items-center gap-6 md:gap-8">
+            <!-- Các thẻ link sẽ được chèn vào đây -->
+        </div>
+    </div>
+
+    <script>
+        // --- CƠ SỞ DỮ LIỆU TRUNG TÂM ---
+        // Nơi bạn có thể dễ dàng thay đổi tất cả 20 trang web.
+        // Mỗi mục chứa: link (href), tên (text), ảnh (imageUrl), và màu nền (colors).
+        const linkData = [
+            { href: 'https://www.duolingo.com/', text: 'Duolingo', imageUrl: 'https://placehold.co/80x80/58CC02/ffffff?text=DL', colors: ['#84D822', '#58A700'] },
+            { href: 'https://dictionary.cambridge.org/', text: 'Cambridge Dictionary', imageUrl: 'https://placehold.co/80x80/007bff/ffffff?text=CD', colors: ['#6D28D9', '#4F46E5'] },
+            { href: 'https://www.oxfordlearnersdictionaries.com/', text: 'Oxford Dictionary', imageUrl: 'https://placehold.co/80x80/0d6efd/ffffff?text=OD', colors: ['#22D3EE', '#0EA5E9'] },
+            { href: 'https://quizlet.com/', text: 'Quizlet', imageUrl: 'https://placehold.co/80x80/4255FF/ffffff?text=QZ', colors: ['#4338CA', '#5B21B6'] },
+            { href: 'https://www.memrise.com/', text: 'Memrise', imageUrl: 'https://placehold.co/80x80/ffc107/000000?text=MR', colors: ['#F59E0B', '#EF4444'] },
+            { href: 'https://www.youtube.com/c/bbclearningenglish', text: 'BBC Learning English', imageUrl: 'https://placehold.co/80x80/c4302b/ffffff?text=BBC', colors: ['#D946EF', '#DB2777'] },
+            { href: 'https://learningenglish.voanews.com/', text: 'VOA Learning English', imageUrl: 'https://placehold.co/80x80/17a2b8/ffffff?text=VOA', colors: ['#14B8A6', '#0891B2'] },
+            { href: 'https://www.grammarly.com/', text: 'Grammarly', imageUrl: 'https://placehold.co/80x80/15C39A/ffffff?text=GR', colors: ['#10B981', '#059669'] },
+            { href: 'https://www.ted.com/talks', text: 'TED Talks', imageUrl: 'https://placehold.co/80x80/e62b1e/ffffff?text=TED', colors: ['#EA580C', '#E11D48'] },
+            { href: 'https://www.vocabulary.com/', text: 'Vocabulary.com', imageUrl: 'https://placehold.co/80x80/4C4E8F/ffffff?text=VB', colors: ['#8B5CF6', '#EC4899'] },
+            { href: 'https://www.merriam-webster.com/', text: 'Merriam-Webster', imageUrl: 'https://placehold.co/80x80/284A7E/ffffff?text=MW', colors: ['#60A5FA', '#3B82F6'] },
+            { href: 'https://forvo.com/', text: 'Forvo Pronunciation', imageUrl: 'https://placehold.co/80x80/20c997/ffffff?text=FV', colors: ['#34D399', '#10B981'] },
+            { href: 'https://youglish.com/', text: 'YouGlish', imageUrl: 'https://placehold.co/80x80/dc3545/ffffff?text=YG', colors: ['#F97316', '#DC2626'] },
+            { href: 'https://learnenglish.britishcouncil.org/', text: 'British Council', imageUrl: 'https://placehold.co/80x80/004990/ffffff?text=BC', colors: ['#047857', '#065F46'] },
+            { newtab: true, href: 'https://www.newsinlevels.com/', text: 'News in Levels', imageUrl: 'https://placehold.co/80x80/6c757d/ffffff?text=NL', colors: ['#65A30D', '#16A34A'] },
+            { href: 'https://lyricstraining.com/', text: 'LyricsTraining', imageUrl: 'https://placehold.co/80x80/f472b6/ffffff?text=LT', colors: ['#F472B6', '#EC4899'] },
+            { href: 'https://www.reddit.com/r/EnglishLearning/', text: 'r/EnglishLearning', imageUrl: 'https://placehold.co/80x80/FF4500/ffffff?text=RD', colors: ['#FB923C', '#F97316'] },
+            { href: 'https://www.urbandictionary.com/', text: 'Urban Dictionary', imageUrl: 'https://placehold.co/80x80/1D2439/ffffff?text=UD', colors: ['#BE185D', '#9D174D'] },
+            { href: 'https://www.wordreference.com/', text: 'WordReference', imageUrl: 'https://placehold.co/80x80/6f42c1/ffffff?text=WR', colors: ['#A78BFA', '#8B5CF6'] },
+            { href: 'https://tatoeba.org/en/', text: 'Tatoeba Sentences', imageUrl: 'https://placehold.co/80x80/009688/ffffff?text=TB', colors: ['#EAB308', '#CA8A04'] }
+        ];
+
+        // --- Hàm tạo và hiển thị các thẻ link ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('links-container');
+
+            // Lặp qua mảng dữ liệu và tạo thẻ cho mỗi mục
+            linkData.forEach(item => {
+                // Tạo phần tử thẻ link (<a>)
+                const card = document.createElement('a');
+                card.href = item.href; // Lấy link từ dữ liệu
+                card.target = "_blank";
+                card.rel = "noopener noreferrer";
+                
+                // Thêm các lớp CSS của Tailwind và lớp tùy chỉnh
+                card.className = "link-card relative w-full max-w-2xl p-4 flex items-center gap-5 rounded-3xl overflow-hidden shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer";
+                
+                // Thiết lập nền gradient động từ dữ liệu
+                card.style.background = `linear-gradient(135deg, ${item.colors[0]}, ${item.colors[1]})`;
+
+                // Tạo nội dung HTML bên trong thẻ bằng dữ liệu động
+                card.innerHTML = `
+                    <!-- Lớp chứa họa tiết sọc chéo và chấm tròn -->
+                    <div class="card-pattern"></div>
+                    
+                    <!-- Nội dung chính của thẻ (ảnh và văn bản) -->
+                    <div class="card-content flex items-center gap-5 w-full">
+                        <!-- Vùng chứa hình ảnh tròn -->
+                        <div class="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 bg-white/20 rounded-full border-2 border-black p-1 shadow-md">
+                            <img 
+                                src="${item.imageUrl}" 
+                                alt="${item.text} Icon" 
+                                class="w-full h-full rounded-full object-cover"
+                            >
+                        </div>
+                        
+                        <!-- Vùng chứa văn bản -->
+                        <div class="flex-grow">
+                            <h2 class="text-xl md:text-2xl font-bold text-white tracking-wider" style="font-family: 'Inter', sans-serif;">
+                                ${item.text}
+                            </h2>
+                        </div>
+                    </div>
+                `;
+
+                // Thêm thẻ vừa tạo vào vùng chứa chính
+                container.appendChild(card);
+            });
+        });
+    </script>
+
+</body>
+</html>
+
