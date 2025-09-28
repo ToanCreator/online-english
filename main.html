@@ -1086,61 +1086,7 @@
     </div>
     
     <script type="module">
-    // Global variables provided by the Canvas environment, with local fallbacks
-    const appId = typeof __app_id !== 'undefined' ? __app_id : 'toancreator-online-english';
-    const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {
-        apiKey: "AIzaSyDXcxdEh_K4UYfipS6xhm_gTG6DQXlAiK8",
-        authDomain: "toancreator-online-english.firebaseapp.com",
-        projectId: "toancreator-online-english",
-        storageBucket: "toancreator-online-english.firebasestorage.app",
-        messagingSenderId: "539400242770",
-        appId: "1:539400242770:web:ca1c4a50ef599f6ebf018b",
-        measurementId: "G-PM98HBKTC0"
-    };
-    const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
-
-    let app, auth, db;
-    let isAuthReady = false;
     
-    // Tải các module Firebase
-    import("https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js")
-        .then(module => {
-            const { initializeApp } = module;
-            app = initializeApp(firebaseConfig);
-            return import("https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js");
-        })
-        .then(module => {
-            const { getAuth, signInWithCustomToken, signInAnonymously, onAuthStateChanged } = module;
-            auth = getAuth(app);
-            return import("https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js");
-        })
-        .then(module => {
-            const { getFirestore, doc, getDoc, setDoc, setLogLevel } = module;
-            db = getFirestore(app);
-            setLogLevel('debug');
-            
-            onAuthStateChanged(auth, async (user) => {
-                if (user) {
-                    isAuthReady = true;
-                    console.log("Firebase authentication successful!");
-                } else {
-                    isAuthReady = true;
-                    console.log("Signed in anonymously!");
-                }
-            });
-
-            if (initialAuthToken) {
-                signInWithCustomToken(auth, initialAuthToken).catch(error => {
-                    console.error("Firebase custom token auth failed:", error);
-                    signInAnonymously(auth);
-                });
-            } else {
-                signInAnonymously(auth);
-            }
-        })
-        .catch(error => {
-            console.error("Failed to load Firebase modules:", error);
-        });
 
     // TUVUNG-NHAP
     
@@ -1255,29 +1201,9 @@ let userApiKey = '';
     aiPanelOverlay.classList.add('show');
     
     // Sử dụng API Key của người dùng
-    const userApiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${userApiKey}`;
+    const userApiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite-preview-09-2025:generateContent?key=${userApiKey}`;
     
-    if (isAuthReady && db) {
-        const docRef = doc(db, `artifacts/${appId}/public/data/ai_responses`, word);
-
-        try {
-            console.log("Checking Firestore for cached response for word:", word);
-            const docSnap = await getDoc(docRef);
-
-            if (docSnap.exists()) {
-                console.log("Cached response found. Displaying...");
-                const cachedContent = docSnap.data().content;
-                displayAIContent(cachedContent, word);
-                return;
-            }
-        } catch (error) {
-            console.error("Error accessing Firestore cache:", error);
-        }
-    } else {
-        console.warn("Firebase not ready. AI caching is disabled for this session.");
-    }
-
-    console.log("No cached response found. Calling Gemini API with user's API Key...");
+    console.log("Calling Gemini API with user's API Key...");
     const prompt = `
     [!] Ko viết in đậm hoặc chứa dấu "**", viết thường là được. Tôi cần bạn tạo một định nghĩa ngắn gọn và 5 ví dụ về cách sử dụng từ "${word}" trong các tình huống cụ thể, kèm theo dịch nghĩa tiếng Việt. 
     Định dạng trả về phải như sau:
@@ -1320,18 +1246,17 @@ let userApiKey = '';
         const result = await response.json();
         const text = result.candidates[0].content.parts[0].text;
         
-        if (isAuthReady && db) {
-            try {
-                console.log("Successfully fetched from Gemini. Saving to Firestore...");
-                const docRef = doc(db, `artifacts/${appId}/public/data/ai_responses`, word);
-                await setDoc(docRef, {
-                    content: text,
-                    createdAt: new Date()
-                });
-                console.log("AI response successfully cached to Firestore.");
-            } catch (error) {
-                console.error("Error saving to Firestore:", error);
-            }
+        // Sử dụng localStorage để cache thay vì Firestore
+        try {
+            const cacheKey = `ai_cache_${word}`;
+            const cacheData = {
+                content: text,
+                createdAt: new Date().toISOString()
+            };
+            localStorage.setItem(cacheKey, JSON.stringify(cacheData));
+            console.log("AI response cached to localStorage.");
+        } catch (error) {
+            console.error("Error saving to localStorage:", error);
         }
         
         displayAIContent(text, word);
@@ -1881,7 +1806,7 @@ let userApiKey = '';
         aiPanelOverlay.classList.remove('show');
     });
 
-    window.addEventListener('DOMContentLoaded', function() {
+let isAuthReady = true;    window.addEventListener('DOMContentLoaded', function() {
         loadProgress();
         loadApiKey();
         updateModeDisplay();
@@ -2030,6 +1955,30 @@ function testApiKey(key) {
             resolve(false);
         });
     });
+}
+function getCachedAIResponse(word) {
+    try {
+        const cacheKey = `ai_cache_${word}`;
+        const cached = localStorage.getItem(cacheKey);
+        if (cached) {
+            const cacheData = JSON.parse(cached);
+            // Kiểm tra cache không quá 7 ngày
+            const cacheDate = new Date(cacheData.createdAt);
+            const now = new Date();
+            const diffTime = Math.abs(now - cacheDate);
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+            
+            if (diffDays <= 7) {
+                return cacheData.content;
+            } else {
+                // Xóa cache cũ
+                localStorage.removeItem(cacheKey);
+            }
+        }
+    } catch (error) {
+        console.error("Error reading cache:", error);
+    }
+    return null;
 }
 </script>
 </body>
