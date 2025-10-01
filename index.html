@@ -3,158 +3,629 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn English Vocabulary - Hub</title>
-    <!-- Tải Tailwind CSS để tạo giao diện nhanh chóng và đẹp mắt -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tải phông chữ từ Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>English with Toàn Creator</title>
     <style>
-        /* CSS tùy chỉnh để thêm các hiệu ứng và phong cách độc đáo */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #111827; /* Nền xám đen */
-            /* Thêm một lớp nền gradient tinh tế */
-            background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.05) 1px, transparent 0);
-            background-size: 20px 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+            display: flex;
+            flex-direction: column;
         }
 
-        /* Phong cách cho tiêu đề chính */
-        .main-title {
-            font-family: 'Bebas Neue', cursive;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2);
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            flex-grow: 1; /* Cho phép container giãn nở */
         }
 
-        /* Lớp giả để tạo họa tiết sọc chéo và chấm tròn */
-        .card-pattern::before {
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        h1 {
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2em;
+        }
+
+        .controls {
+            background: rgba(255,255,255,0.95);
+            padding: 25px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: fadeIn 1s ease;
+        }
+
+        .search-box {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .search-input {
+            flex: 1;
+            min-width: 250px;
+            padding: 15px 20px;
+            border: 2px solid #667eea;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #764ba2;
+            box-shadow: 0 0 0 3px rgba(118,75,162,0.1);
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #669999 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(245,87,108,0.4);
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .tab {
+            padding: 12px 30px;
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .tab.active {
+            background: linear-gradient(135deg, #669999 0%, #764ba2 100%);
+            color: white;
+            border-color: #764ba2;
+        }
+
+        .tab:hover:not(.active) {
+            background: rgba(102,126,234,0.1);
+            transform: translateY(-2px);
+        }
+
+        .content-section {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        /* ------------------------------------------- */
+        /* THAY ĐỔI MÀU NỀN VÀ THÊM HIỆU ỨNG CARD */
+        /* ------------------------------------------- */
+        .card {
+            /* Đổi màu nền bài học khác với màu nền website */
+            background-color: #f7f7f7; /* Màu nền xám nhạt */
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: all 0.3s;
+            cursor: pointer;
+            animation: fadeInUp 0.5s ease;
+            position: relative; /* Quan trọng cho pseudo-element */
+            /* Thêm hiệu ứng viền sáng khi nhấn/giữ */
+            border: 3px solid transparent;
+        }
+
+        /* Hiệu ứng thanh ánh sáng chéo */
+        .card:hover::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            /* Kết hợp họa tiết chấm tròn và sọc chéo */
-            background-image: 
-                /* Chấm tròn trắng */
-                radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
-                /* Sọc chéo trắng */
-                repeating-linear-gradient(
-                    45deg,
-                    rgba(255, 255, 255, 0.08),
-                    rgba(255, 255, 255, 0.08) 2px,
-                    transparent 2px,
-                    transparent 12px
-                );
-            background-size: 30px 30px, auto; /* Kích thước cho từng họa tiết */
-            z-index: 0;
-            opacity: 0.8;
-            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-        }
-        
-        /* Hiệu ứng khi di chuột vào */
-        .link-card:hover .card-pattern::before {
-            opacity: 0.4;
-            transform: scale(1.1); /* Phóng to nhẹ họa tiết */
+            background: linear-gradient(
+                45deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.15) 30%, /* Thanh sáng trắng chéo */
+                rgba(255, 255, 255, 0) 50%,
+                rgba(0, 0, 0, 0.1) 70%, /* Thanh chéo xám */
+                rgba(0, 0, 0, 0) 100%
+            );
+            background-size: 200% 200%;
+            opacity: 1;
+            transition: opacity 0.3s;
+            animation: stripe-move 3s linear infinite; /* Hiệu ứng chuyển động */
         }
 
-        /* Đảm bảo nội dung thẻ nằm trên lớp họa tiết */
-        .card-content {
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+        }
+        
+        /* Hiệu ứng viền sáng khi nhấn hoặc nhấn giữ */
+        .card:active, .card:focus {
+            animation: border-sparkle 1s infinite alternate, fadeInUp 0.5s ease;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.8), 0 15px 40px rgba(0,0,0,0.25);
+            outline: none; /* Bỏ viền focus mặc định */
+        }
+
+        @keyframes stripe-move {
+            0% {
+                background-position: -100% -100%;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+        
+        @keyframes border-sparkle {
+            0% {
+                border-color: rgba(255, 255, 255, 0.4);
+            }
+            100% {
+                border-color: rgba(255, 255, 255, 1);
+            }
+        }
+        /* ------------------------------------------- */
+        /* KẾT THÚC THAY ĐỔI CARD */
+        /* ------------------------------------------- */
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
             position: relative;
-            z-index: 1;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+
+        .no-results h3 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        /* ------------------------------------------- */
+        /* FOOTER */
+        /* ------------------------------------------- */
+        footer {
+            margin-top: 40px;
+            padding: 15px 0;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        /* ------------------------------------------- */
+
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .search-box {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
         }
     </style>
 </head>
-<body class="text-white">
+<body>
+    <div class="container">
+        <header>
+            <h1>ENGLISH WITH</h1>
+            <h1> TOÀN CREATOR </h1>
+            <p class="subtitle">improve your english now</p>
+        </header>
 
-    <div class="container mx-auto px-4 py-8 md:py-16">
-        <!-- Tiêu đề chính của trang web -->
-        <h1 class="main-title text-5xl md:text-7xl font-bold text-center mb-12 animate-pulse">
-            TOÀN CREATOR
-        </h1>
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" class="search-input" id="searchInput" placeholder="🔍 Tìm kiếm bài học...">
+                <button class="btn btn-primary" onclick="searchLessons()">Tìm kiếm</button>
+                <button class="btn btn-secondary" onclick="randomLesson()">🎲 Bài ngẫu nhiên</button>
+            </div>
 
-        <!-- Vùng chứa các link sẽ được tạo bằng JavaScript -->
-        <div id="links-container" class="flex flex-col items-center gap-6 md:gap-8">
-            <!-- Các thẻ link sẽ được chèn vào đây -->
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab('grade12')">Lớp 12</div>
+                <div class="tab" onclick="switchTab('topics')">Theo chủ đề TNTHPT</div>
+            </div>
+        </div>
+
+        <div id="grade12" class="content-section active">
+            <div class="cards-grid" id="grade12Cards"></div>
+        </div>
+
+        <div id="topics" class="content-section">
+            <div class="cards-grid" id="topicsCards"></div>
+        </div>
+
+        <div id="noResults" class="no-results" style="display: none;">
+            <h3>😢 Không tìm thấy kết quả</h3>
+            <p>Vui lòng thử từ khóa khác!</p>
         </div>
     </div>
-
+    
+    <footer>
+        © Toàn Creator - 2025 / 2025
+    </footer>
     <script>
-        // --- CƠ SỞ DỮ LIỆU TRUNG TÂM ---
-        // Nơi bạn có thể dễ dàng thay đổi tất cả 20 trang web.
-        // Mỗi mục chứa: link (href), tên (text), ảnh (imageUrl), và màu nền (colors).
-        const linkData = [
-            { href: 'https://www.duolingo.com/', text: 'Duolingo', imageUrl: 'https://placehold.co/80x80/58CC02/ffffff?text=DL', colors: ['#84D822', '#58A700'] },
-            { href: 'https://dictionary.cambridge.org/', text: 'Cambridge Dictionary', imageUrl: 'https://placehold.co/80x80/007bff/ffffff?text=CD', colors: ['#6D28D9', '#4F46E5'] },
-            { href: 'https://www.oxfordlearnersdictionaries.com/', text: 'Oxford Dictionary', imageUrl: 'https://placehold.co/80x80/0d6efd/ffffff?text=OD', colors: ['#22D3EE', '#0EA5E9'] },
-            { href: 'https://quizlet.com/', text: 'Quizlet', imageUrl: 'https://placehold.co/80x80/4255FF/ffffff?text=QZ', colors: ['#4338CA', '#5B21B6'] },
-            { href: 'https://www.memrise.com/', text: 'Memrise', imageUrl: 'https://placehold.co/80x80/ffc107/000000?text=MR', colors: ['#F59E0B', '#EF4444'] },
-            { href: 'https://www.youtube.com/c/bbclearningenglish', text: 'BBC Learning English', imageUrl: 'https://placehold.co/80x80/c4302b/ffffff?text=BBC', colors: ['#D946EF', '#DB2777'] },
-            { href: 'https://learningenglish.voanews.com/', text: 'VOA Learning English', imageUrl: 'https://placehold.co/80x80/17a2b8/ffffff?text=VOA', colors: ['#14B8A6', '#0891B2'] },
-            { href: 'https://www.grammarly.com/', text: 'Grammarly', imageUrl: 'https://placehold.co/80x80/15C39A/ffffff?text=GR', colors: ['#10B981', '#059669'] },
-            { href: 'https://www.ted.com/talks', text: 'TED Talks', imageUrl: 'https://placehold.co/80x80/e62b1e/ffffff?text=TED', colors: ['#EA580C', '#E11D48'] },
-            { href: 'https://www.vocabulary.com/', text: 'Vocabulary.com', imageUrl: 'https://placehold.co/80x80/4C4E8F/ffffff?text=VB', colors: ['#8B5CF6', '#EC4899'] },
-            { href: 'https://www.merriam-webster.com/', text: 'Merriam-Webster', imageUrl: 'https://placehold.co/80x80/284A7E/ffffff?text=MW', colors: ['#60A5FA', '#3B82F6'] },
-            { href: 'https://forvo.com/', text: 'Forvo Pronunciation', imageUrl: 'https://placehold.co/80x80/20c997/ffffff?text=FV', colors: ['#34D399', '#10B981'] },
-            { href: 'https://youglish.com/', text: 'YouGlish', imageUrl: 'https://placehold.co/80x80/dc3545/ffffff?text=YG', colors: ['#F97316', '#DC2626'] },
-            { href: 'https://learnenglish.britishcouncil.org/', text: 'British Council', imageUrl: 'https://placehold.co/80x80/004990/ffffff?text=BC', colors: ['#047857', '#065F46'] },
-            { newtab: true, href: 'https://www.newsinlevels.com/', text: 'News in Levels', imageUrl: 'https://placehold.co/80x80/6c757d/ffffff?text=NL', colors: ['#65A30D', '#16A34A'] },
-            { href: 'https://lyricstraining.com/', text: 'LyricsTraining', imageUrl: 'https://placehold.co/80x80/f472b6/ffffff?text=LT', colors: ['#F472B6', '#EC4899'] },
-            { href: 'https://www.reddit.com/r/EnglishLearning/', text: 'r/EnglishLearning', imageUrl: 'https://placehold.co/80x80/FF4500/ffffff?text=RD', colors: ['#FB923C', '#F97316'] },
-            { href: 'https://www.urbandictionary.com/', text: 'Urban Dictionary', imageUrl: 'https://placehold.co/80x80/1D2439/ffffff?text=UD', colors: ['#BE185D', '#9D174D'] },
-            { href: 'https://www.wordreference.com/', text: 'WordReference', imageUrl: 'https://placehold.co/80x80/6f42c1/ffffff?text=WR', colors: ['#A78BFA', '#8B5CF6'] },
-            { href: 'https://tatoeba.org/en/', text: 'Tatoeba Sentences', imageUrl: 'https://placehold.co/80x80/009688/ffffff?text=TB', colors: ['#EAB308', '#CA8A04'] }
+        // ========================================
+        // HƯỚNG DẪN THÊM BÀI HỌC MỚI:
+        // 1. Thêm object mới vào mảng grade12Lessons hoặc topicLessons
+        // 2. Mỗi object cần có: title, emoji, description, link
+        // 3. emoji: là biểu tượng hiển thị trên thẻ (có thể dùng emoji hoặc để trống nếu có ảnh)
+        // 4. link: là đường dẫn đến bài học của bạn
+        // ========================================
+
+        // DỮ LIỆU BÀI HỌC LỚP 12
+        const grade12Lessons = [
+            {
+                title: "UNIT 1: LIFE STORIES WE ADMIRE",
+                emoji: "📒",
+                description: "Những câu chuyện về cuộc đời mà chúng ta ngưỡng mộ",
+                link: "https://toancreator.github.io/online-english/english12/UNIT1.html"
+            },
+            {
+                title: "UNIT 2: A MULTICULTURAL WORLD",
+                emoji: "💬",
+                description: "Một thế giới đa văn hoá",
+                link: "https://toancreator.github.io/online-english/english12/UNIT2.html"
+            },
+            {
+                title: "UNIT 3: GREEN LIVING",
+                emoji: "🌱",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "UNIT 4: URBANISATION",
+                emoji: "🏘️",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "UNIT 5: THE WORLD OF WORK",
+                emoji: "💼",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "UNIT 6: ARTIFICIAL INTELLIGENCE",
+                emoji: "🤖",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "UNIT 7: THE WORLD OF MASS MEDIA",
+                emoji: "📡",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "UNIT 8: WILDLIFE CONSERVATION",
+                emoji: "🦖",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "UINT 9: CAREER PATHS",
+                emoji: "🎯",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "UNIT 10: LIFELONG LEARNING",
+                emoji: "📚",
+                description: "đang cập nhật...",
+                link: "#"
+            }
         ];
 
-        // --- Hàm tạo và hiển thị các thẻ link ---
-        document.addEventListener('DOMContentLoaded', () => {
-            const container = document.getElementById('links-container');
+        // DỮ LIỆU BÀI HỌC THEO CHỦ ĐỀ
+        const topicLessons = [
+            {
+                title: "TOPIC: ARTIFICIAL INTELLIGENCE (AI)",
+                emoji: "🦾",
+                description: "Tổng hợp các bài học về trí tuệ nhân tạo, công nghệ và tương lai",
+                link: "https://toancreator.github.io/online-english/lesson/ARTIFICIAL-INTELLIGENCE.html"
+            },
+            {
+                title: "TOPIC: BEING INDEPENDENT",
+                emoji: "🪞",
+                description: "Tự lập, có trách nhiệm thể hiện sự trưởng thành",
+                link: "https://toancreator.github.io/online-english/lesson/BEING-INDEPENDENT.html"
+            },
+            {
+                title: "TOPIC: CAREER PATHS",
+                emoji: "🎯",
+                description: "Định hướng phát triển sự nghiệp",
+                link: "https://toancreator.github.io/online-english/lesson/CAREER-PATHS.html"
+            },
+            {
+                title: "TOPIC: GOING GREEN",
+                emoji: "♻️",
+                description: "Phát triển bền vững theo lối sống xanh",
+                link: "https://toancreator.github.io/online-english/lesson/GOING-GREEN.html"
+            },
+            {
+                title: " TOPIC: HEALTH AND LIFESTYLES",
+                emoji: "💪",
+                description: "Sức khoẻ và phong cách sống",
+                link: "https://toancreator.github.io/online-english/lesson/HEATH-AND-LIFESTYLES.html"
+            },
+            {
+                title: "TOPIC: LIFELONG LEARNING",
+                emoji: "📝",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "TOPIC: LIFE STORIES",
+                emoji: "📖",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "TOPIC: OUR HERITAGE",
+                emoji: "🔮",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "TOPIC: PROBLEMS AND EXPERIENCES",
+                emoji: "🚨",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "TOPIC: SOCIAL ISSUES",
+                emoji: "🌍",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "TOPIC: THE GENERATION GAP",
+                emoji: "⛓️‍💥",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "TOPIC: THE WORLD OF WORK",
+                emoji: "🪙",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "TOPIC: THE WORLD OF MASS MEDIA",
+                emoji: "📺",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "TOPIC: WILDLIFE CONSERVATION",
+                emoji: "🦣",
+                description: "đang cập nhật...",
+                link: "#"
+            }
+        ];
 
-            // Lặp qua mảng dữ liệu và tạo thẻ cho mỗi mục
-            linkData.forEach(item => {
-                // Tạo phần tử thẻ link (<a>)
-                const card = document.createElement('a');
-                card.href = item.href; // Lấy link từ dữ liệu
-                card.target = "_blank";
-                card.rel = "noopener noreferrer";
-                
-                // Thêm các lớp CSS của Tailwind và lớp tùy chỉnh
-                card.className = "link-card relative w-full max-w-2xl p-4 flex items-center gap-5 rounded-3xl overflow-hidden shadow-lg transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer";
-                
-                // Thiết lập nền gradient động từ dữ liệu
-                card.style.background = `linear-gradient(135deg, ${item.colors[0]}, ${item.colors[1]})`;
+        let currentData = grade12Lessons;
+        let currentTab = 'grade12';
 
-                // Tạo nội dung HTML bên trong thẻ bằng dữ liệu động
-                card.innerHTML = `
-                    <!-- Lớp chứa họa tiết sọc chéo và chấm tròn -->
-                    <div class="card-pattern"></div>
-                    
-                    <!-- Nội dung chính của thẻ (ảnh và văn bản) -->
-                    <div class="card-content flex items-center gap-5 w-full">
-                        <!-- Vùng chứa hình ảnh tròn -->
-                        <div class="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 bg-white/20 rounded-full border-2 border-black p-1 shadow-md">
-                            <img 
-                                src="${item.imageUrl}" 
-                                alt="${item.text} Icon" 
-                                class="w-full h-full rounded-full object-cover"
-                            >
-                        </div>
-                        
-                        <!-- Vùng chứa văn bản -->
-                        <div class="flex-grow">
-                            <h2 class="text-xl md:text-2xl font-bold text-white tracking-wider" style="font-family: 'Inter', sans-serif;">
-                                ${item.text}
-                            </h2>
-                        </div>
+        // Khởi tạo trang
+        function init() {
+            renderCards(grade12Lessons, 'grade12Cards');
+            renderCards(topicLessons, 'topicsCards');
+        }
+
+        // Render cards
+        function renderCards(data, containerId) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = data.map(lesson => `
+                <div class="card" onclick="openLesson('${lesson.link}')" tabindex="0"> <div class="card-image">
+                        <span>${lesson.emoji}</span>
                     </div>
-                `;
+                    <div class="card-content">
+                        <div class="card-title">${lesson.title}</div>
+                        <div class="card-description">${lesson.description}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
 
-                // Thêm thẻ vừa tạo vào vùng chứa chính
-                container.appendChild(card);
+        // Chuyển tab
+        function switchTab(tabName) {
+            // Update tabs
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            // Dùng event.target nếu hàm được gọi trực tiếp từ onclick trên tab
+            // Nếu gọi switchTab(tabName) từ code (ví dụ init), cần tìm tab element tương ứng
+            const clickedTab = document.querySelector(`.tab[onclick*="${tabName}"]`);
+            if (clickedTab) {
+                clickedTab.classList.add('active');
+            }
+
+            // Update content
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
             });
+            document.getElementById(tabName).classList.add('active');
+
+            currentTab = tabName;
+            currentData = tabName === 'grade12' ? grade12Lessons : topicLessons;
+            
+            // Reset search
+            document.getElementById('searchInput').value = '';
+            document.getElementById('noResults').style.display = 'none';
+        }
+
+        // Tìm kiếm
+        function searchLessons() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const containerId = currentTab === 'grade12' ? 'grade12Cards' : 'topicsCards';
+            
+            if (!searchTerm) {
+                renderCards(currentData, containerId);
+                document.getElementById('noResults').style.display = 'none';
+                return;
+            }
+
+            const filtered = currentData.filter(lesson => 
+                lesson.title.toLowerCase().includes(searchTerm) ||
+                lesson.description.toLowerCase().includes(searchTerm)
+            );
+
+            if (filtered.length > 0) {
+                renderCards(filtered, containerId);
+                document.getElementById('noResults').style.display = 'none';
+            } else {
+                document.getElementById(containerId).innerHTML = '';
+                document.getElementById('noResults').style.display = 'block';
+            }
+        }
+
+        // Bài ngẫu nhiên
+        function randomLesson() {
+            const randomIndex = Math.floor(Math.random() * currentData.length);
+            const randomLesson = currentData[randomIndex];
+            openLesson(randomLesson.link);
+        }
+
+        // Mở bài học
+        function openLesson(link) {
+            window.open(link, '_blank');
+        }
+
+        // Tìm kiếm khi nhấn Enter
+        document.addEventListener('DOMContentLoaded', function() {
+            init();
+            
+            document.getElementById('searchInput').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    searchLessons();
+                }
+            });
+            
+            // Cập nhật lại tab active khi init để đảm bảo class active được gán đúng
+            document.querySelector('.tab.active').click(); 
         });
     </script>
-
 </body>
 </html>
-
