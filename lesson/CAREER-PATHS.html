@@ -965,7 +965,7 @@
 <body>
     <div class="container">
         <div class="header-container">
-            <h1>Career Paths</h1>
+            <h1>CAREER-PATHS</h1>
         </div>
         
         <div class="mode-toggle">
@@ -2047,6 +2047,7 @@
     let currentMode = 0;
     let isAutoplayActive = false;
     
+    const FLASHCARD_SET_ID = "CareerPathsSet"; // SET ID
     const flashcardContainer = document.getElementById('flashcardContainer');
     const flashcardElement = document.getElementById('flashcard');
     const wordElement = document.getElementById('word');
@@ -2215,24 +2216,29 @@ let userApiKey = '';
     }
 
     function saveProgress() {
-        localStorage.setItem('flashcardProgress', currentCardIndex);
-        localStorage.setItem('currentMode', currentMode);
+        localStorage.setItem(`flashcardProgress_${FLASHCARD_SET_ID}`, currentCardIndex);
+        localStorage.setItem(`currentMode_${FLASHCARD_SET_ID}`, currentMode);
+        
     }
     
     function loadProgress() {
-        const savedProgress = localStorage.getItem('flashcardProgress');
-        const savedMode = localStorage.getItem('currentMode');
+        const savedProgress = localStorage.getItem(`flashcardProgress_${FLASHCARD_SET_ID}`);
+        const savedMode = localStorage.getItem(`currentMode_${FLASHCARD_SET_ID}`);
         
         if (savedProgress !== null) {
-            currentCardIndex = parseInt(savedProgress);
+        currentCardIndex = parseInt(savedProgress);
             if (currentCardIndex >= flashcards.length) {
                 currentCardIndex = 0;
+                
             }
+           
         }
         
         if (savedMode !== null) {
             currentMode = parseInt(savedMode);
+            
         }
+        
     }
     
     function updateModeDisplay() {
