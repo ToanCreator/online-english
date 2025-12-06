@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Lớp 12A1 - Năng động & Sáng tạo</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom,#990011,#fcf6f5);
+        }
+        .banner {
+            background: url("media/tapthe.jpg");
+            text-align: center;
+            color: tomato;
+            font-size: 12px;
+            padding: 70px;
+            background-size: cover;
+        }
+        .slogan {
+            font-family: Times new roman;
+            font-size: 10px;
+            text-align: center;
+            width: 100%;
+            background: linear-gradient(to bottom,green,darkgreen);
+            color: ghostwhite;
+        }
+        .db {
+            font-family: Times new roman;            
+            background-color: white;
+            width: 70%;
+            height: auto;
+            border: 1px solid black;
+            border-radius: 10px;
+            display: block;
+            margin-left: 12px;
+            margin-right: auto;
+        }
+        .hb {
+            text-align: center;
+            font-weight: bold;
+            color: brown;"
+        }
+        .nb {
+            text-align: center;
+            font-family: Times new roman;
+            color: #333;            
+        }
+        .lb {
+            background-color: Cornsilk;
+            border: 1px solid black;
+        }
+        .hb {
+            text-align: center;
+            font-family: Times new roman;
+            color: tomato;
+        }
+        .hb2 {
+            text-align: center;
+            font-family: Times new roman;
+            color: ForestGreen;
+        }
+        .hb3 {
+            text-align: center;
+            font-family: Times new roman;
+            color: Magenta;
+        }
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #FF5733;
+            margin: 20px 0;            
+        }
+        .hr2 {
+            border: none;
+            height: 2px;
+            background-color: Lime;
+            margin: 20px 0;           
+        }
+        .hr3 {
+            border: none;
+            height: 2px;
+            background-color: purple;
+            margin: 20px 0;           
+        }                      
+        .award_img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            border: 3px double gold;
+        }
+        .pt_img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            border: 2px solid deepskyblue;
+        }
+        .img {
+            width: 100%;
+            height: 100%;
+        }
+        .cell_img {
+            width: 50%;
+        }
+        .cell_text {            
+            font-size: 15px;
+        }
+        .cell_text_r {
+            text-align: right;
+            font-size: 15px;
+        }
+        video {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            border: 2px double MediumTurquoise;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .ngt {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            background-color: DeepSkyBlue;
+            padding: 10px;            
+            border: 1px solid black;
+            color: white;
+            font-weight: bold;
+        }
+        .ntn {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            background-color: tomato;
+            padding: 10px;            
+            border: 1px solid black;
+            color: white;
+            font-weight: bold;
+        }
+        .btt {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: lightgreen;
+            border-radius: 50%;
+            border: 1px solid black;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            font-size: 24px;    
+        }
+        footer {
+            background-color: white;
+            margin: 1px;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!-- button back to top -->
+    <a href="#0" class="btt">𖤂</a>
+
+    <!-- Biểu ngữ của lớp -->
+    <div class="banner">
+        <h1>TẬP THỂ 12A1</h1>
+    </div>
+    <div class="slogan">
+       <h2>Lớp Mạnh Là Lớp Thầy Hạnh</h2>
+    </div>
+</header>
+
+    <!-- Phần mục lục -->
+    <table style="background-color: AntiqueWhite; border: 1px solid black;">
+    <caption style="color: Brown; font-family: Times new roman; font-size: 24px; font-weight: bold; background-color: Bisque;" id="0">Mục lục</caption>
+        <tr>
+            <td class="cell_text">
+                <h3 class="cell_text_r">Danh sách và Bảng</h3>
+                <ul>
+                    <li><a href="#1">Chào mừng 20/11</a> </li>
+                    <li><a href="#2">Hoạt động thể thao</a></li>
+                    <li><a href="#3">Thành viên nhóm 5</a></li>
+                    <li><a href="#4">Bonus - sí rịt á nhe</a></li>
+                </ul>
+            </td>
+            <td class="cell_img"><img src="media/menu1.jpg" class="img"></td>
+        </tr>
+        <tr>
+            <td class="cell_img"><img src="media/menu2.jpg" class="img"></td>
+            <td class="cell_text">
+                <h3 class="cell_text">Đa phương tiện</h3>
+                <ul>
+                    <li><a href="#5">Lớp 12A1 chúng tôi</a></li>
+                    <li><a href="#6">Giáo viên chủ nhiệm</a></li>
+                    <li><a href="#7">Hoạt động ý nghĩa</a></li>
+                    <li><a href="#8">Nghe nhạc hay phết</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="cell_text">
+                <h3 class="cell_text_r">Vài thứ hay ho</h3>
+                <ul>
+                    <li><a href="#9">Thắc mắc giải đáp</a></li>
+                    <li><a href="#10">Các liên kết khác</a></li>
+                    <li><a href="#11">Lời kết của nhóm</a></li>
+                    <li><a href="#12">Đi đến cuối trang</a></li>
+                </ul>
+            </td>
+            <td class="cell_img"><img src="media/menu3.jpg" class="img"></td>
+        </tr>
+    </table>
+    </div>
+    <br>
+    
+    <!-- hr mẫu -->
+    <div class="lb">
+    <hr>
+    <h1 class ="hb" id="1">Chào mừng 20/11</h1>
+    <hr>
+    <!--- ngon -->
+    
+    <!-- Chào mừng 20/11 -->
+    
+    <ol>
+        <li><b>Đơn ca:</b></li>
+            <ul>
+                <li><u>Bài hát:</u> <em>Đứa con hư</em></li>
+                <li>Bạn <b>Chen Li-wen</b> trình bày</li>
+                <li>Đạt <mark>giải nhì</mark> của hội thi</li>
+            </ul>
+        <li><b>Song ca:</b></li>
+            <ul>
+                <li><u>Bài hát:</u> <em>Ngàn ước mơ Việt Nam</em></li>
+                <li>Bạn <b>Chen Li-wen</b> <br>và <b>Đoàn Ngọc Bảo Trân</b> trình bày</li>
+                <li>Đạt <mark>giải nhì</mark> của hội thi</li>
+            </ul>
+    </ol>
+        <p class="hb">Video múa</p>
+        <video src="media/vid-mua.mp4" controls autoplay muted></video>        
+        <p class="hb">Ảnh múa</p>
+        <img src="media/mua.jpeg" alt="12a1" class="pt_img"></img>
+        <br>
+    </div>
+    <br>
+    
+    <!-- Thể thao -->
+    <div class="lb">
+    <hr>
+    <h1 class ="hb" id="2">Hoạt động thể thao</h1>
+    <hr>
+    <!-- Môn thi đấu, Vận động viên/Đội, Kết quả, Ghi chú -->    
+    <table style="border: 1px solid black; font-family: Time roman; font-size: 12px; width: 100%; height: auto; text-align: center; background-color: aliceblue">
+        <tr>
+            <th style="border: 1px solid black; background-color: ForestGreen; color: white; padding: 10px; margin: 10px;">Môn thi đấu</th>
+            <th style="border: 1px solid black; background-color: DeepSkyBlue; color: white; padding: 10px; margin: 10px;">Đội</th>
+            <th style="border: 1px solid black; background-color: tomato; color: white; padding: 10px; margin: 10px;">Kết quả</th>
+            <th style="border: 1px solid black; background-color: gold; color: black; padding: 10px; margin: 10px;">Ghi chú</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black">Đua xe<br>thủy lực</td>
+            <td style="border: 1px solid black">Aquafina</td>
+            <td style="border: 1px solid black">Top 1 server</td>
+            <td style="border: 1px solid black">Thầy Hạnh<br>nở mày nở mặt</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black">Bóng chuyền</td>
+            <td style="border: 1px solid black">coming soon</td>
+            <td style="border: 1px solid black">coming soon</td>
+            <td style="border: 1px solid black">Lụm cái<br>giải nhất cho Thầy</td>
+        </tr>
+        <p class="hb">Video thể thao</p>
+        <video src="media/vid-the-thao.mp4" controls autoplay muted></video>
+        <p class="hb">Ảnh Thể Thao</p>
+        <img src="media/bong-chuyen.jpg" alt="12a1" class="pt_img"></img>
+        <br>
+        <p class="hb">Bảng hoạt động thể thao 12A1</p>
+    </table>
+    </div>
+ 
+    <br>
+    
+    <!-- NHÓM 5 - tzu yun làm -->
+    <div class="lb">
+    <hr>
+    <h1 class ="hb" id="3">Thành viên nhóm 5</h1>
+    <hr>
+    <center>
+  <table style="font-family: Arial, sans-serif; color: white; background-color: pink;">
+    <tr>
+      <th>STT</th>
+      <th>Họ và Tên</th>
+      <th>Vai trò</th>
+    </tr>
+    <tr><td>1</td><td> Trần Hoàn Toàn </td><td>Nhóm trưởng</td></tr>
+    <tr><td>2</td><td>Đỗ Mạnh Tiến</td><td>Thư ký</td></tr>
+    <tr><td>3</td><td>Huỳnh Ngọc
+Trâm
+</td><td>Thành viên</td></tr>
+    <tr><td>4</td><td>Nguyễn Lê Uyên Thảo</td><td>Thành viên</td></tr>
+    <tr><td>5</td><td>Nguyễn Thị Thu Thắm
+</td><td>Thành viên</td></tr>
+    <tr><td>6</td><td>Võ Nguyễn Thanh
+Thư</td><td>Thành viên</td></tr>
+    <tr><td>7</td><td>Nguyễn Thị Bảo
+Trâm</td><td>Thành viên</td></tr>
+    <tr><td>8</td><td>Đoàn Ngọc Bảo
+Trân</td><td>Thành viên</td></tr>
+    <tr><td>9</td><td>Chen, Li-
+Wen</td><td>Thành viên</td></tr>
+    <tr><td>10</td><td>Huang Tzu Yun</td><td>Thành viên</td></tr>
+  </table>
+</center>
+<br>
+    </div>
+    <!-- N -->
+    
+    <br>
+    <!-- BONUS -->
+    <div class="lb">
+    <hr>
+    <h1 class ="hb" id="4">Bonus</h1>
+    <hr>
+        <p class="hb">Ta daa!</p>
+        <img src="media/bonus.jpg" alt="ảnh bonus" class="award_img"></img>
+        <p class="hb">Muốn thì tìm lý do, không muốn thì tìm cách</p>
+        <p style="text-align: right; font-size: 12px; font-family: Times new roman; margin-right: 30px;">_Huỳnh Văn Khiêm_</p>
+    </div>
+    
+    <br>
+    <!-- Đa phương tiện -->
+    <!-- 12a1 -->
+    <div class="lb">
+    <hr class="hr2">
+    <h1 class ="hb2" id="5">Lớp 12A1 chúng tôi</h1>
+    <hr class="hr2">
+    <p class="hb">Ảnh tập thể 1</p>
+    <img src="media/tapthe1.jpg" alt="12a1" class="pt_img"></img>
+    <p class="hb">Ảnh tập thể 2</p>
+    <img src="media/tapthe2.jpg" alt="12a1" class="pt_img"></img>
+    <br>
+    </div>
+    
+    <br>
+    <!-- Thầy Hạnh -->
+    <div class="lb">
+    <hr class="hr2">
+    <h1 class ="hb2" id="6">Giáo viên chủ nhiệm</h1>
+    <hr class="hr2">
+    <img src="media/thay-hanh2.jpg" alt="Thầy Hạnh" class="award_img"></img>
+        <p class="hb">Thầy Vũ Văn Hạnh</p>
+        <fieldset class="db">
+        <legend>THU THẮM:</legend>
+        <pre>Thầy Hạnh là một người luôn tận tâm
+luôn kiên nhẵn giúp chúng em giải
+những bài tập khó, truyền cho chúng em
+những động lực mỗi khi học toán.</pre>
+        </fieldset>
+        <br><br>    
+    </div>
+    <br>
+    
+    <!-- Thầy Bợn -->
+    <div class="lb">
+    <hr class="hr2">
+    <h1 class ="hb2" id="7">Hoạt động ý nghĩa</h1>
+    <hr class="hr2">
+    <img src="media/thay-bon.jpg" alt="12a1" class="pt_img"></img>
+        <p class="hb">Thầy Lê Văn Bợn và Lớp 12A1</p>
+        
+        <fieldset class="db">
+        <legend>BẢO TRÂM:</legend>
+        <pre>Thầy Bợn là một người vui tính,giản dị
+đã gắn bó với lớp em qua suốt 3 năm.
+Sự tận tụy của thầy chính là nguồn
+động lực cho chúng em cố gắng hằng ngày.</pre>
+        </fieldset>
+        <br>
+        <p class="hb">Video về Thầy Bợn và Các Bạn 12A1</p>
+        <video src="media/vid-thay-bon.mp4" controls autoplay muted></video>
+        
+        <!-- Thầy Mẫn -->
+        <hr>        
+        <br><br>
+        <img src="media/thay-man.jpg" alt="12a1" class="pt_img"></img>
+        <p class="hb">Thầy Nguyễn Thanh Mẫn và Lớp 12A1</p>
+        <fieldset class="db">
+        <legend>THANH THƯ:</legend>
+        <pre>Thầy Mẫn dạy thể dục rất hòa đồng
+và luôn động viên chúng em cố gắng.
+Giờ học của thầy sôi nổi,
+rèn luyện sức khỏe mà vẫn vui.
+Nhờ cách dạy gần gũi và trách nhiệm,
+chúng em thêm yêu thích môn thể dục hơn.</pre>
+        </fieldset>
+        <br>
+        <p class="hb">Video về Thầy Mẫn và Các Bạn 12A1</p>
+        <video src="media/vid-thay-man.mp4" controls autoplay muted></video>        
+        <br><br>
+        
+        <!-- Cô Thủy -->
+        <hr>        
+        <br><br>
+        <img src="media/co-thuy.jpg" alt="12a1" class="pt_img"></img>
+        <p class="hb">Cô Nguyễn Thị Thu Thủy và Lớp 12A1</p>
+        
+        <fieldset class="db">
+        <legend>NGỌC TRÂM:</legend>
+        <pre>Cô Thuỷ, giáo viên môn Tiếng Anh
+của lớp em là một người vui vẻ,
+thân thiện và luôn mang đến bầu không khí
+tích cực trong mỗi tiết học.
+Cách giảng bài của cô rõ ràng, dễ hiểu
+đặc biệt là cách cô phát âm rất tự nhiên.
+Nhờ sự kiên nhẫn và nhiệt tình của cô,
+chúng em cảm thấy thích thú
+và yêu thích môn học này hơn.</pre>
+        </fieldset>
+        <br>
+        <p class="hb">Video về Cô Thủy và Các Bạn 12A1</p>
+        <video src="media/vid-co-thuy.mp4" controls autoplay muted></video>        
+        <br><br>
+        
+        <!-- Cô Tuyền sinh -->
+        <hr>        
+        <br><br>
+        <img src="media/co-tuyen-sinh.jpg" alt="12a1" class="pt_img"></img>
+        <p class="hb">Cô Nguyễn Thị Thanh Tuyền và Lớp 12A1</p>
+        
+        <fieldset class="db">
+        <legend>MẠNH TIẾN:</legend>
+        <pre>Trong trường em có nhiều cô Tuyền
+nhưng cô Tuyền dạy môn sinh chỉ có một.
+Cô Tuyền sinh là một người luôn tràn
+đầy năng lượng, luôn kiên nhẫn
+quan tâm học sinh
+đặc biệt học cô sẽ không phải buồn ngủ
+vì cô luôn biết pha trò đúng lúc.
+Bài giảng môn sinh toàn chữ tưởng chừng 
+như khô khan nhưng khi qua lời cô
+giảng nó trở nên gần gữi
+và đầy thú vị hơn.
+Mỗi lần giảng đều khiến chúng em
+bị cuốn vào thế giới sinh học
+đầy sinh động. Đối với em, cô
+không chỉ là người truyền đạt kiến thức
+mà còn là người truyền cảm hứng để
+tôi yêu hơn môn Sinh và tin tưởng hơn
+vào khả năng của chính mình.
+Hình ảnh cô – giản dị,
+tận tụy và tràn đầy 
+nhiệt huyết – sẽ mãi
+là một kỷ niệm đẹp
+trong những năm tháng học trò của tôi.</pre>
+        </fieldset>
+        <br><br>
+        
+        <!-- Cô Tuyền Hoá -->
+        <hr>        
+        <br><br>
+        <img src="media/co-tuyen-hoa.jpg" alt="12a1" class="pt_img"></img>
+        <p class="hb">Cô Phan Thị Mộng Tuyền và Lớp 12A1</p>
+        
+        <fieldset class="db">
+        <legend>BẢO TRÂN:</legend>
+        <pre>Cô Tuyền hoá là một người rất tận tâm
+với nghề. Cô luôn biết cách làm
+cho bài hoá trở nên thú vị và đơn giản hơn
+khiến tụi em rất hứng thú với môn hoá.</pre>
+        </fieldset>                
+        <br><br>
+        
+        <!-- Cô Hà -->
+        <hr>        
+        <br><br>
+        <img src="media/co-ha.jpg" alt="12a1" class="pt_img"></img>
+        <p class="hb">Cô Dương Thị Thu Hà và Lớp 12A1</p>
+        <br>        
+        <video src="media/vid-co-ha.mp4" controls autoplay muted></video>
+        <p class="hb">Video về Cô Hà và Các Bạn 12A1</p>        
+        <br><br>
+        
+        <!-- Thầy Tuyên -->
+        <hr>        
+        <br><br>
+        <img src="media/thay-tuyen.jpg" alt="12a1" class="pt_img"></img>
+        <p class="hb">Thầy Nguyễn Mạnh Tuyên và Lớp 12A1</p>
+        <br>        
+        <video src="media/vid-thay-tuyen.mp4" controls autoplay muted></video>
+        <p class="hb">Video về Thầy Tuyên và Các Bạn 12A1</p>        
+        <br><br>
+        
+        <!-- Thầy Thịnh -->
+        <hr>        
+        <br><br>
+        <img src="media/thay-thinh.jpg" alt="12a1" class="pt_img"></img>
+        <p class="hb">Thầy Bùi Ngọc Thịnh và Lớp 12A1</p>
+        <br>        
+        <video src="media/vid-thay-thinh.mp4" controls autoplay muted></video>
+        <p class="hb">Video về Thầy Thịnh và Các Bạn 12A1</p>        
+        <br><br>
+        
+        <!-- Thầy Buonh -->
+        <hr>        
+        <br><br>
+        <img src="media/thay-buonh.jpg" alt="12a1" class="pt_img"></img>
+        <p class="hb">Thầy Đặng Văn Buônh và Lớp 12A1</p>   
+        <br><br>
+        
+        <!-- Thầy Thắng -->
+        <hr>        
+        <br><br>
+        <img src="media/thay-thang.jpg" alt="12a1" class="award_img"></img>
+        <p class="hb">Thầy Phạm Đức Thắng</p>
+        <br>        
+        <video src="media/vid-thay-thang.mp4" controls autoplay muted></video>
+        <p class="hb">Video về Thầy Thắng và Các Bạn 12A1</p>
+        <br><br>                
+    </div>
+    <br>
+        
+        <!-- audio -->
+        <div class="lb">
+        <hr class="hr2">
+        <h1 class ="hb2" id="8">Nghe nhạc hay phết</h1>
+        <hr class="hr2">
+        <p class="hb">Chiếc khăn piêu remix</p>
+        <audio src="media/w-khan-pieu.mp3" controls autoplay muted></audio>
+        <p class="hb">Thời gian remix</p>
+        <audio src="media/w-thoi-gian.mp3" controls autoplay muted></audio>
+        <br><br>
+        </div>
+        
+        <br>
+        <!-- hết đa pt -->
+        <!-- Phần cuối -->
+        <div class="lb">
+        <hr class="hr3">
+        <h1 class ="hb3" id="9">Thắc mắc giải đáp</h1>
+        <hr class="hr3">
+        <!-- Q&A -->
+        <details>
+            <summary class="hb">Trang web này có dùng A.I không?</summary>
+                <p style="text-align: center">Có, A.I 10% + code tay 85% + lụm code 5%</p>
+        </details>
+        <br>
+        <details>
+            <summary class="hb">Trang web này code bao nhiêu dòng?</summary>
+                <p style="text-align: center">Hơn 500 dòng code</p>
+        </details>
+        <br>
+        <details>
+            <summary class="hb">Trang web này mất bao lâu để hoàn thiện?</summary>
+                <p style="text-align: center">8 Tiếng</p>
+        </details>
+        <br>
+        </div>
+        
+        <br>
+        <!-- link -->
+        <div class="lb">
+        <hr class="hr3">
+        <h1 class ="hb3" id="10">Các liên kết khác</h1>
+        <hr class="hr3">
+        <br><br>
+        <a href="
+https://www.facebook.com/doantruongngogiatu/" class="ngt" >FACEBOOK ĐOÀN TRƯỜNG NGT</a>
+        <br>
+        <a href="
+https://youtube.com/@4eyes1999?si=nWBe7PBp7tYYJ3gv" class="ntn" >YOUTUBE THẦY NGUYỄN THANH NHÀN</a>
+        <br><br>
+        </div>
+        
+        <br>
+        <div class="lb">
+        <hr class="hr3">
+        <h1 class ="hb3" id="11">Lời kết của nhóm</h1>
+        <hr class="hr3">        
+        <p class="hb" style="color: ForestGreen">Tập thể 12A1 xin gửi đến
+thầy cô lời tri ân sâu sắc nhất.
+Những bài học, sự tận tâm
+và tình yêu thương
+của thầy cô sẽ mãi là hành trang quý giá
+theo chúng em suốt chặng
+đường dài phía trước.
+Dù mai này trưởng thành,
+chúng em vẫn luôn
+tự hào vì đã được là học trò của thầy cô.
+Kính chúc thầy cô luôn mạnh khỏe, hạnh phúc
+và tiếp tục thắp sáng ước mơ
+cho bao thế hệ học trò.</p>
+    </div>
+    <br>
+    <footer id="12">© DESIGN BY GROUP 5</footer>
+    <footer>! DO NOT COPY IN ANY FORM !</footer>
+    
+</body>
+</html>
