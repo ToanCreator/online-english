@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English with Toàn Creator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            flex-grow: 1; /* Cho phép container giãn nở */
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        h1 {
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2em;
+        }
+
+        .controls {
+            background: rgba(255,255,255,0.95);
+            padding: 25px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: fadeIn 1s ease;
+        }
+
+        .search-box {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .search-input {
+            flex: 1;
+            min-width: 250px;
+            padding: 15px 20px;
+            border: 2px solid #667eea;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #764ba2;
+            box-shadow: 0 0 0 3px rgba(118,75,162,0.1);
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #669999 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(245,87,108,0.4);
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .tab {
+            padding: 12px 30px;
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .tab.active {
+            background: linear-gradient(135deg, #669999 0%, #764ba2 100%);
+            color: white;
+            border-color: #764ba2;
+        }
+
+        .tab:hover:not(.active) {
+            background: rgba(102,126,234,0.1);
+            transform: translateY(-2px);
+        }
+
+        .content-section {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        /* ------------------------------------------- */
+        /* THAY ĐỔI MÀU NỀN VÀ THÊM HIỆU ỨNG CARD */
+        /* ------------------------------------------- */
+        .card {
+            /* Đổi màu nền bài học khác với màu nền website */
+            background-color: #f7f7f7; /* Màu nền xám nhạt */
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: all 0.3s;
+            cursor: pointer;
+            animation: fadeInUp 0.5s ease;
+            position: relative; /* Quan trọng cho pseudo-element */
+            /* Thêm hiệu ứng viền sáng khi nhấn/giữ */
+            border: 3px solid transparent;
+        }
+
+        /* Hiệu ứng thanh ánh sáng chéo */
+        .card:hover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+                45deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.15) 30%, /* Thanh sáng trắng chéo */
+                rgba(255, 255, 255, 0) 50%,
+                rgba(0, 0, 0, 0.1) 70%, /* Thanh chéo xám */
+                rgba(0, 0, 0, 0) 100%
+            );
+            background-size: 200% 200%;
+            opacity: 1;
+            transition: opacity 0.3s;
+            animation: stripe-move 3s linear infinite; /* Hiệu ứng chuyển động */
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+        }
+        
+        /* Hiệu ứng viền sáng khi nhấn hoặc nhấn giữ */
+        .card:active, .card:focus {
+            animation: border-sparkle 1s infinite alternate, fadeInUp 0.5s ease;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.8), 0 15px 40px rgba(0,0,0,0.25);
+            outline: none; /* Bỏ viền focus mặc định */
+        }
+
+        @keyframes stripe-move {
+            0% {
+                background-position: -100% -100%;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+        
+        @keyframes border-sparkle {
+            0% {
+                border-color: rgba(255, 255, 255, 0.4);
+            }
+            100% {
+                border-color: rgba(255, 255, 255, 1);
+            }
+        }
+        /* ------------------------------------------- */
+        /* KẾT THÚC THAY ĐỔI CARD */
+        /* ------------------------------------------- */
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+            position: relative;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+
+        .no-results h3 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        /* ------------------------------------------- */
+        /* FOOTER */
+        /* ------------------------------------------- */
+        footer {
+            margin-top: 40px;
+            padding: 15px 0;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        /* ------------------------------------------- */
+
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .search-box {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ENGLISH WITH</h1>
+            <h1> TOÀN CREATOR </h1>
+            <p class="subtitle">improve your english now</p>
+        </header>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" class="search-input" id="searchInput" placeholder="🔍 Tìm kiếm bài học...">
+                <button class="btn btn-primary" onclick="searchLessons()">Tìm kiếm</button>
+                <button class="btn btn-secondary" onclick="randomLesson()">🎲 Bài ngẫu nhiên</button>
+            </div>
+
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab('grade12')">Lớp 12</div>
+                <div class="tab" onclick="switchTab('topics')">Theo chủ đề TNTHPT</div>
+            </div>
+        </div>
+
+        <div id="grade12" class="content-section active">
+            <div class="cards-grid" id="grade12Cards"></div>
+        </div>
+
+        <div id="topics" class="content-section">
+            <div class="cards-grid" id="topicsCards"></div>
+        </div>
+
+        <div id="noResults" class="no-results" style="display: none;">
+            <h3>😢 Không tìm thấy kết quả</h3>
+            <p>Vui lòng thử từ khóa khác!</p>
+        </div>
+    </div>
+    
+    <footer>
+        © Toàn Creator - 2025 / 2025
+    </footer>
+    <script>
+    
+        // DỮ LIỆU BÀI HỌC LỚP 12
+        const grade12Lessons = [
+            {
+                title: "UNIT 1: LIFE STORIES WE ADMIRE",
+                emoji: "📒",
+                description: "Những câu chuyện mà chúng ta ngưỡng mộ",
+                link: "https://toancreator.github.io/online-english/english12/UNIT1.html"
+            },
+            {
+                title: "UNIT 2: A MULTICULTURAL WORLD",
+                emoji: "💬",
+                description: "Một thế giới đa văn hoá",
+                link: "https://toancreator.github.io/online-english/english12/UNIT2.html"
+            },
+            {
+                title: "UNIT 3: GREEN LIVING",
+                emoji: "🌱",
+                description: "Lối sống xanh",
+                link: "https://toancreator.github.io/online-english/english12/UNIT3.html"
+            },
+            {
+                title: "UNIT 4: URBANISATION",
+                emoji: "🏘️",
+                description: "Đô thị hoá",
+                link: "https://toancreator.github.io/online-english/english12/UNIT4.html"
+            },
+            {
+                title: "UNIT 5: THE WORLD OF WORK",
+                emoji: "💼",
+                description: "Thế giới công việc",
+                link: "https://toancreator.github.io/online-english/english12/UNIT5.html"
+            },
+            {
+                title: "UNIT 6: ARTIFICIAL INTELLIGENCE (AI)}",
+                emoji: "🤖",
+                description: "Trí tuệ nhân tạo",
+                link: "https://toancreator.github.io/online-english/english12/UNIT6.html"
+            },
+            {
+                title: "UNIT 7: THE WORLD OF MASS MEDIA",
+                emoji: "📡",
+                description: "Thế giới truyền thông đa phương tiện",
+                link: "https://toancreator.github.io/online-english/english12/UNIT7.html"
+            },
+            {
+                title: "UNIT 8: WILDLIFE CONSERVATION",
+                emoji: "🦖",
+                description: "Bảo tồn thú hoang",
+                link: "https://toancreator.github.io/online-english/english12/UNIT8.html"
+            },
+            {
+                title: "UINT 9: CAREER PATHS",
+                emoji: "🎯",
+                description: "Con đường sự nghiệp",
+                link: "https://toancreator.github.io/online-english/english12/UNIT9.html"
+            },
+            {
+                title: "UNIT 10: LIFELONG LEARNING",
+                emoji: "📚",
+                description: "Học tập suốt đời",
+                link: "https://toancreator.github.io/online-english/english12/UNIT10.html"
+            }
+        ];
+
+        // DỮ LIỆU BÀI HỌC THEO CHỦ ĐỀ
+        const topicLessons = [
+            {
+                title: "TOPIC: ARTIFICIAL INTELLIGENCE (AI)",
+                emoji: "🦾",
+                description: "Tổng hợp các bài học về trí tuệ nhân tạo, công nghệ và tương lai",
+                link: "https://toancreator.github.io/online-english/lesson/ARTIFICIAL-INTELLIGENCE.html"
+            },
+            {
+                title: "TOPIC: BEING INDEPENDENT",
+                emoji: "🪞",
+                description: "Tự lập, có trách nhiệm thể hiện sự trưởng thành",
+                link: "https://toancreator.github.io/online-english/lesson/BEING-INDEPENDENT.html"
+            },
+            {
+                title: "TOPIC: CAREER PATHS",
+                emoji: "🎯",
+                description: "Định hướng phát triển sự nghiệp",
+                link: "https://toancreator.github.io/online-english/lesson/CAREER-PATHS.html"
+            },
+            {
+                title: "TOPIC: GOING GREEN",
+                emoji: "♻️",
+                description: "Phát triển bền vững theo lối sống xanh",
+                link: "https://toancreator.github.io/online-english/lesson/GOING-GREEN.html"
+            },
+            {
+                title: " TOPIC: HEALTH AND LIFESTYLES",
+                emoji: "💪",
+                description: "Sức khoẻ và phong cách sống",
+                link: "https://toancreator.github.io/online-english/lesson/HEATLH-AND-LIFESTYLES.html"
+            },
+            {
+                title: "TOPIC: LIFELONG LEARNING",
+                emoji: "📝",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "TOPIC: LIFE STORIES",
+                emoji: "📖",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "TOPIC: OUR HERITAGE",
+                emoji: "🔮",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "TOPIC: PROBLEMS AND EXPERIENCES",
+                emoji: "🚨",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "TOPIC: SOCIAL ISSUES",
+                emoji: "🌍",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "TOPIC: THE GENERATION GAP",
+                emoji: "⛓️‍💥",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "TOPIC: THE WORLD OF WORK",
+                emoji: "🪙",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "TOPIC: THE WORLD OF MASS MEDIA",
+                emoji: "📺",
+                description: "đang cập nhật...",
+                link: "#"
+            },
+            {
+                title: "TOPIC: WILDLIFE CONSERVATION",
+                emoji: "🦣",
+                description: "đang cập nhật...",
+                link: "#"
+            }
+        ];
+
+        let currentData = grade12Lessons;
+        let currentTab = 'grade12';
+
+        // Khởi tạo trang
+        function init() {
+            renderCards(grade12Lessons, 'grade12Cards');
+            renderCards(topicLessons, 'topicsCards');
+        }
+
+        // Render cards
+        function renderCards(data, containerId) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = data.map(lesson => `
+                <div class="card" onclick="openLesson('${lesson.link}')" tabindex="0"> <div class="card-image">
+                        <span>${lesson.emoji}</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title">${lesson.title}</div>
+                        <div class="card-description">${lesson.description}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Chuyển tab
+        function switchTab(tabName) {
+            // Update tabs
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            // Dùng event.target nếu hàm được gọi trực tiếp từ onclick trên tab
+            // Nếu gọi switchTab(tabName) từ code (ví dụ init), cần tìm tab element tương ứng
+            const clickedTab = document.querySelector(`.tab[onclick*="${tabName}"]`);
+            if (clickedTab) {
+                clickedTab.classList.add('active');
+            }
+
+            // Update content
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(tabName).classList.add('active');
+
+            currentTab = tabName;
+            currentData = tabName === 'grade12' ? grade12Lessons : topicLessons;
+            
+            // Reset search
+            document.getElementById('searchInput').value = '';
+            document.getElementById('noResults').style.display = 'none';
+        }
+
+        // Tìm kiếm
+        function searchLessons() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const containerId = currentTab === 'grade12' ? 'grade12Cards' : 'topicsCards';
+            
+            if (!searchTerm) {
+                renderCards(currentData, containerId);
+                document.getElementById('noResults').style.display = 'none';
+                return;
+            }
+
+            const filtered = currentData.filter(lesson => 
+                lesson.title.toLowerCase().includes(searchTerm) ||
+                lesson.description.toLowerCase().includes(searchTerm)
+            );
+
+            if (filtered.length > 0) {
+                renderCards(filtered, containerId);
+                document.getElementById('noResults').style.display = 'none';
+            } else {
+                document.getElementById(containerId).innerHTML = '';
+                document.getElementById('noResults').style.display = 'block';
+            }
+        }
+
+        // Bài ngẫu nhiên
+        function randomLesson() {
+            const randomIndex = Math.floor(Math.random() * currentData.length);
+            const randomLesson = currentData[randomIndex];
+            openLesson(randomLesson.link);
+        }
+
+        // Mở bài học
+        function openLesson(link) {
+            window.open(link, '_blank');
+        }
+
+        // Tìm kiếm khi nhấn Enter
+        document.addEventListener('DOMContentLoaded', function() {
+            init();
+            
+            document.getElementById('searchInput').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    searchLessons();
+                }
+            });
+            
+            // Cập nhật lại tab active khi init để đảm bảo class active được gán đúng
+            document.querySelector('.tab.active').click(); 
+        });
+    </script>
+</body>
+</html>
