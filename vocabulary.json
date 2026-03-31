@@ -1,0 +1,2488 @@
+{
+  "units": [
+    {
+      "id": "default",
+      "title": "Chọn một bài đi bạn",
+      "flashcards": [       
+      ]
+    },
+    {
+      "id": "grade12_unit1",
+      "title": "Lớp 12 - Unit 1: Life Stories We Admire",
+      "flashcards": [
+        {
+        "word": "Diary",
+        "definition": "nhật ký",
+        "type": "N",
+        "phonetic": "/ˈdaɪəri/"
+    },
+    {
+        "word": "Account",
+        "definition": "bản ghi lại, tài khoản",
+        "type": "N",
+        "phonetic": "/əˈkaʊnt/"
+    },
+    {
+        "word": "Admire",
+        "definition": "ngưỡng mộ, khâm phục",
+        "type": "V",
+        "phonetic": "/ədˈmaɪər/"
+    },
+    {
+        "word": "Army",
+        "definition": "quân đội, lục quân",
+        "type": "N",
+        "phonetic": "/ˈɑːrmi/"
+    },
+    {
+        "word": "Military",
+        "definition": "quân sự, quân đội",
+        "type": "N",
+        "phonetic": "/ˈmɪlɪteri/"
+    },
+    {
+        "word": "The Communist Party",
+        "definition": "Đảng Cộng sản",
+        "type": "N",
+        "phonetic": "/ðə ˈkɒmjʊnɪst ˈpɑːrti/"
+    },
+    {
+        "word": "Adopt",
+        "definition": "nhận nuôi, áp dụng",
+        "type": "V",
+        "phonetic": "/əˈdɒpt/"
+    },
+    {
+        "word": "Soldier",
+        "definition": "người lính, quân nhân",
+        "type": "N",
+        "phonetic": "/ˈsəʊldʒər/"
+    },
+    {
+        "word": "Hero",
+        "definition": "anh hùng",
+        "type": "N",
+        "phonetic": "/ˈhɪərəʊ/"
+    },
+    {
+        "word": "Carry out",
+        "definition": "tiến hành, thực hiện",
+        "type": "Phrasal V",
+        "phonetic": "/ˈkæri aʊt/"
+    },
+    {
+        "word": "Battle",
+        "definition": "trận chiến, chiến đấu",
+        "type": "N / V",
+        "phonetic": "/ˈbætl/"
+    },
+    {
+        "word": "Resistance war",
+        "definition": "cuộc chiến tranh kháng chiến",
+        "type": "N",
+        "phonetic": "/rɪˈzɪstəns wɔːr/"
+    },
+    {
+        "word": "Defeat",
+        "definition": "đánh bại, sự thất bại",
+        "type": "V / N",
+        "phonetic": "/dɪˈfiːt/"
+    },
+    {
+        "word": "Attack",
+        "definition": "tấn công, cuộc tấn công",
+        "type": "V / N",
+        "phonetic": "/əˈtæk/"
+    },
+    {
+        "word": "Enemy",
+        "definition": "kẻ thù, quân địch",
+        "type": "N",
+        "phonetic": "/ˈenəmi/"
+    },
+    {
+        "word": "Death",
+        "definition": "cái chết",
+        "type": "N",
+        "phonetic": "/deθ/"
+    },
+    {
+        "word": "Pass away",
+        "definition": "qua đời, mất",
+        "type": "Phrasal V",
+        "phonetic": "/pɑːs əˈweɪ/"
+    },
+    {
+        "word": "On cloud nine",
+        "definition": "rất vui sướng, cực kỳ hạnh phúc",
+        "type": "Idiom",
+        "phonetic": "/ɒn klaʊd naɪn/"
+    },
+    {
+        "word": "On top of the world",
+        "definition": "cực kỳ hạnh phúc, vui sướng tột độ",
+        "type": "Idiom",
+        "phonetic": "/ɒn tɒp əv ðə wɜːrld/"
+    },
+    {
+        "word": "Over the moon",
+        "definition": "rất vui mừng, vô cùng sung sướng",
+        "type": "Idiom",
+        "phonetic": "/ˌəʊvər ðə ˈmuːn/"
+    },
+    {
+        "word": "Poem",
+        "definition": "bài thơ",
+        "type": "N",
+        "phonetic": "/ˈpəʊɪm/"
+    },
+    {
+        "word": "Poetry",
+        "definition": "thơ ca, thi ca",
+        "type": "N",
+        "phonetic": "/ˈpəʊətri/"
+    },
+    {
+        "word": "Genius",
+        "definition": "thiên tài, sự tài năng",
+        "type": "N",
+        "phonetic": "/ˈdʒiːniəs/"
+    },
+    {
+        "word": "Ambitious",
+        "definition": "tham vọng, hoài bão",
+        "type": "Adj",
+        "phonetic": "/æmˈbɪʃəs/"
+    },
+    {
+        "word": "Surgeon",
+        "definition": "bác sĩ phẫu thuật",
+        "type": "N",
+        "phonetic": "/ˈsɜːrdʒən/"
+    },
+    {
+        "word": "Devote",
+        "definition": "cống hiến, tận tâm",
+        "type": "V",
+        "phonetic": "/dɪˈvəʊt/"
+    },
+    {
+        "word": "Youth",
+        "definition": "tuổi trẻ, thanh niên",
+        "type": "N",
+        "phonetic": "/juːθ/"
+    },
+    {
+        "word": "Field hospital",
+        "definition": "bệnh viện dã chiến",
+        "type": "N",
+        "phonetic": "/fiːld ˈhɒspɪtl/"
+    },
+    {
+        "word": "Impressive",
+        "definition": "ấn tượng, gây xúc động",
+        "type": "Adj",
+        "phonetic": "/ɪmˈpresɪv/"
+    },
+    {
+        "word": "Achievement",
+        "definition": "thành tựu, thành tích",
+        "type": "N",
+        "phonetic": "/əˈtʃiːvmənt/"
+    },
+    {
+        "word": "Experience",
+        "definition": "kinh nghiệm, trải nghiệm",
+        "type": "N / V",
+        "phonetic": "/ɪkˈspɪəriəns/"
+    },
+    {
+        "word": "Diagnose",
+        "definition": "chẩn đoán (bệnh)",
+        "type": "V",
+        "phonetic": "/ˈdaɪəɡnəʊz/"
+    },
+    {
+        "word": "Rare",
+        "definition": "hiếm, hiếm có",
+        "type": "Adj",
+        "phonetic": "/reər/"
+    },
+    {
+        "word": "Pancreatic",
+        "definition": "thuộc về tuyến tụy",
+        "type": "Adj",
+        "phonetic": "/ˌpæŋkriˈætɪk/"
+    },
+    {
+        "word": "Cancer",
+        "definition": "bệnh ung thư",
+        "type": "N",
+        "phonetic": "/ˈkænsər/"
+    },
+    {
+        "word": "Attend",
+        "definition": "tham dự, có mặt",
+        "type": "V",
+        "phonetic": "/əˈtend/"
+    },
+    {
+        "word": "Bond",
+        "definition": "mối liên kết, gắn kết",
+        "type": "N / V",
+        "phonetic": "/bɒnd/"
+    },
+    {
+        "word": "Marriage",
+        "definition": "hôn nhân, lễ cưới",
+        "type": "N",
+        "phonetic": "/ˈmærɪdʒ/"
+    },
+    {
+        "word": "Biography",
+        "definition": "tiểu sử",
+        "type": "N",
+        "phonetic": "/baɪˈɒɡrəfi/"
+    },
+    {
+        "word": "Biological",
+        "definition": "thuộc về sinh học, ruột thịt",
+        "type": "Adj",
+        "phonetic": "/ˌbaɪəˈlɒdʒɪkl/"
+    },
+    {
+        "word": "Creative",
+        "definition": "sáng tạo",
+        "type": "Adj",
+        "phonetic": "/kriˈeɪtɪv/"
+    },
+    {
+        "word": "Visionary",
+        "definition": "có tầm nhìn xa, người có tầm nhìn",
+        "type": "Adj / N",
+        "phonetic": "/ˈvɪʒəneri/"
+    },
+    {
+        "word": "Childhood",
+        "definition": "thời thơ ấu",
+        "type": "N",
+        "phonetic": "/ˈtʃaɪldhʊd/"
+    },
+    {
+        "word": "Drop out",
+        "definition": "bỏ học, bỏ cuộc",
+        "type": "Phrasal V",
+        "phonetic": "/drɒp aʊt/"
+    },
+    {
+        "word": "Resign",
+        "definition": "từ chức",
+        "type": "V",
+        "phonetic": "/rɪˈzaɪn/"
+    },
+    {
+        "word": "Duty",
+        "definition": "nhiệm vụ, nghĩa vụ",
+        "type": "N",
+        "phonetic": "/ˈdjuːti/"
+    },
+    {
+        "word": "Contribution",
+        "definition": "sự đóng góp",
+        "type": "N",
+        "phonetic": "/ˌkɒntrɪˈbjuːʃn/"
+    },
+    {
+        "word": "Determination",
+        "definition": "sự quyết tâm, tính kiên định",
+        "type": "N",
+        "phonetic": "/dɪˌtɜːrmɪˈneɪʃn/"
+    },
+    {
+        "word": "Rule",
+        "definition": "quy tắc, cai trị, điều hành",
+        "type": "N / V",
+        "phonetic": "/ruːl/"
+    },
+    {
+        "word": "Stylish",
+        "definition": "sành điệu, có phong cách",
+        "type": "Adj",
+        "phonetic": "/ˈstaɪlɪʃ/"
+    },
+    {
+        "word": "Touchscreen",
+        "definition": "màn hình cảm ứng",
+        "type": "N",
+        "phonetic": "/ˈtʌtʃskriːn/"
+    },
+    {
+        "word": "Scientific calculator",
+        "definition": "máy tính khoa học",
+        "type": "N",
+        "phonetic": "/ˌsaɪəntɪfɪk ˈkælkjuleɪtər/"
+    },
+    {
+        "word": "Accessible",
+        "definition": "có thể tiếp cận, dễ dàng sử dụng",
+        "type": "Adj",
+        "phonetic": "/əkˈsesəbl/"
+    },
+    {
+        "word": "Cutting-edge",
+        "definition": "tiên tiến, hiện đại nhất",
+        "type": "Adj",
+        "phonetic": "/ˌkʌtɪŋ ˈedʒ/"
+    },
+    {
+        "word": "Animated",
+        "definition": "hoạt hình, đầy sức sống",
+        "type": "Adj",
+        "phonetic": "/ˈænɪmeɪtɪd/"
+    },
+    {
+        "word": "Computer-animated film",
+        "definition": "phim hoạt hình máy tính",
+        "type": "N",
+        "phonetic": "/kəmˌpjuːtər ˈænɪmeɪtɪd fɪlm/"
+    },
+    {
+        "word": "Blockbuster",
+        "definition": "phim bom tấn",
+        "type": "N",
+        "phonetic": "/ˈblɒkbʌstər/"
+    }
+      ]
+    },
+    {
+      "id": "grade12_unit2",
+      "title": "Lớp 12 - Unit 2: A Multicultural World",
+      "flashcards": [
+        {
+        "word": "Multicultural",
+        "definition": "đa văn hóa",
+        "type": "Adj",
+        "phonetic": "/ˌmʌltiˈkʌltʃərəl/"
+    },
+    {
+        "word": "Cultural diversity",
+        "definition": "sự đa dạng văn hóa",
+        "type": "N",
+        "phonetic": "/ˈkʌltʃərəl daɪˈvɜːrsəti/"
+    },
+    {
+        "word": "Cuisine",
+        "definition": "ẩm thực",
+        "type": "N",
+        "phonetic": "/kwɪˈziːn/"
+    },
+    {
+        "word": "Booth",
+        "definition": "gian hàng, quầy",
+        "type": "N",
+        "phonetic": "/buːθ/"
+    },
+    {
+        "word": "Spicy",
+        "definition": "cay",
+        "type": "Adj",
+        "phonetic": "/ˈspaɪsi/"
+    },
+    {
+        "word": "Autograph",
+        "definition": "chữ ký (của người nổi tiếng)",
+        "type": "N",
+        "phonetic": "/ˈɔːtəɡrɑːf/"
+    },
+    {
+        "word": "Souvenir",
+        "definition": "quà lưu niệm",
+        "type": "N",
+        "phonetic": "/ˌsuːvəˈnɪər/"
+    },
+    {
+        "word": "Tug of war",
+        "definition": "trò kéo co",
+        "type": "N",
+        "phonetic": "/ˌtʌɡ əv ˈwɔːr/"
+    },
+    {
+        "word": "Bamboo dancing",
+        "definition": "múa sạp",
+        "type": "N",
+        "phonetic": "/bæmˈbuː ˈdænsɪŋ/"
+    },
+    {
+        "word": "Delicious",
+        "definition": "ngon miệng",
+        "type": "Adj",
+        "phonetic": "/dɪˈlɪʃəs/"
+    },
+    {
+        "word": "Tasty",
+        "definition": "ngon, đậm đà",
+        "type": "Adj",
+        "phonetic": "/ˈteɪsti/"
+    },
+    {
+        "word": "Identity",
+        "definition": "bản sắc, danh tính",
+        "type": "N",
+        "phonetic": "/aɪˈdentəti/"
+    },
+    {
+        "word": "Popularity",
+        "definition": "sự phổ biến, mức độ nổi tiếng",
+        "type": "N",
+        "phonetic": "/ˌpɒpjuˈlærəti/"
+    },
+    {
+        "word": "Festivity",
+        "definition": "lễ hội, không khí lễ hội",
+        "type": "N",
+        "phonetic": "/feˈstɪvəti/"
+    },
+    {
+        "word": "Trend",
+        "definition": "xu hướng",
+        "type": "N",
+        "phonetic": "/trend/"
+    },
+    {
+        "word": "Custom",
+        "definition": "phong tục, tập quán",
+        "type": "N",
+        "phonetic": "/ˈkʌstəm/"
+    },
+    {
+        "word": "Mystery",
+        "definition": "bí ẩn, điều bí mật",
+        "type": "N",
+        "phonetic": "/ˈmɪstəri/"
+    },
+    {
+        "word": "Globalisation",
+        "definition": "sự toàn cầu hóa",
+        "type": "N",
+        "phonetic": "/ˌɡləʊbəlaɪˈzeɪʃn/"
+    },
+    {
+        "word": "Connected",
+        "definition": "được kết nối",
+        "type": "Adj",
+        "phonetic": "/kəˈnektɪd/"
+    },
+    {
+        "word": "Dish",
+        "definition": "món ăn, đĩa",
+        "type": "N",
+        "phonetic": "/dɪʃ/"
+    },
+    {
+        "word": "Ingredient",
+        "definition": "thành phần, nguyên liệu",
+        "type": "N",
+        "phonetic": "/ɪnˈɡriːdiənt/"
+    },
+    {
+        "word": "Unique",
+        "definition": "độc đáo, độc nhất",
+        "type": "Adj",
+        "phonetic": "/juˈniːk/"
+    },
+    {
+        "word": "Speciality",
+        "definition": "đặc sản, chuyên môn",
+        "type": "N",
+        "phonetic": "/ˌspeʃiˈæləti/"
+    },
+    {
+        "word": "Captivate",
+        "definition": "thu hút, bắt giữ",
+        "type": "V",
+        "phonetic": "/ˈkæptɪveɪt/"
+    },
+    {
+        "word": "Cross-cultural",
+        "definition": "đa văn hóa, giao thoa văn hóa",
+        "type": "Adj",
+        "phonetic": "/ˌkrɒs ˈkʌltʃərəl/"
+    },
+    {
+        "word": "Blend",
+        "definition": "pha trộn, sự kết hợp",
+        "type": "V / N",
+        "phonetic": "/blend/"
+    },
+    {
+        "word": "Reflect",
+        "definition": "phản ánh, suy nghĩ",
+        "type": "V",
+        "phonetic": "/rɪˈflekt/"
+    },
+    {
+        "word": "Richness",
+        "definition": "sự phong phú, sự giàu có",
+        "type": "N",
+        "phonetic": "/ˈrɪtʃnəs/"
+    },
+    {
+        "word": "Appreciate",
+        "definition": "đánh giá cao, trân trọng",
+        "type": "V",
+        "phonetic": "/əˈpriːʃieɪt/"
+    },
+    {
+        "word": "Lifestyle",
+        "definition": "phong cách sống, lối sống",
+        "type": "N",
+        "phonetic": "/ˈlaɪfstaɪl/"
+    },
+    {
+        "word": "Celebrate",
+        "definition": "ăn mừng, kỷ niệm",
+        "type": "V",
+        "phonetic": "/ˈselɪbreɪt/"
+    },
+    {
+        "word": "Extracurricular",
+        "definition": "ngoại khóa",
+        "type": "Adj",
+        "phonetic": "/ˌekstrəkəˈrɪkjʊlər/"
+    },
+    {
+        "word": "Culture shock",
+        "definition": "sốc văn hóa",
+        "type": "N",
+        "phonetic": "/ˈkʌltʃər ʃɒk/"
+    },
+    {
+        "word": "Language barrier",
+        "definition": "rào cản ngôn ngữ",
+        "type": "N",
+        "phonetic": "/ˈlæŋɡwɪdʒ ˈbæriər/"
+    },
+    {
+        "word": "Unfamiliar",
+        "definition": "không quen thuộc",
+        "type": "Adj",
+        "phonetic": "/ˌʌnfəˈmɪliər/"
+    },
+    {
+        "word": "Insulting",
+        "definition": "xúc phạm, lăng mạ",
+        "type": "Adj",
+        "phonetic": "/ɪnˈsʌltɪŋ/"
+    },
+    {
+        "word": "Overcome",
+        "definition": "vượt qua, khắc phục",
+        "type": "V",
+        "phonetic": "/ˌəʊvərˈkʌm/"
+    },
+    {
+        "word": "Staple",
+        "definition": "lương thực chính, chủ yếu",
+        "type": "N / Adj",
+        "phonetic": "/ˈsteɪpl/"
+    },
+    {
+        "word": "Costume",
+        "definition": "trang phục, y phục",
+        "type": "N",
+        "phonetic": "/ˈkɒstjuːm/"
+    },
+    {
+        "word": "Confusion",
+        "definition": "sự bối rối, nhầm lẫn",
+        "type": "N",
+        "phonetic": "/kənˈfjuːʒn/"
+    },
+    {
+        "word": "Anxiety",
+        "definition": "sự lo lắng, bồn chồn",
+        "type": "N",
+        "phonetic": "/æŋˈzaɪəti/"
+    },
+    {
+        "word": "A wide range of",
+        "definition": "một phạm vi rộng lớn",
+        "type": "N phrase",
+        "phonetic": "/ə waɪd reɪndʒ ɒv/"
+    },
+    {
+        "word": "Be on the rise",
+        "definition": "đang gia tăng, đang phát triển",
+        "type": "Idiom",
+        "phonetic": "/bi ɒn ðə raɪz/"
+    },
+    {
+        "word": "increase",
+        "definition": "gia tăng",
+        "type": "V",
+        "phonetic": "/ɪnˈkriːs/"
+    },
+    {
+        "word": "Keep up with",
+        "definition": "bắt kịp, theo kịp",
+        "type": "Phrasal V",
+        "phonetic": "/kiːp ʌp wɪð/"
+    },
+    {
+        "word": "Sense of identity",
+        "definition": "ý thức về bản sắc",
+        "type": "N phrase",
+        "phonetic": "/sens ɒv aɪˈdentəti/"
+    },
+    {
+        "word": "Take something seriously",
+        "definition": "xem cái gì đó là nghiêm túc, coi trọng",
+        "type": "V phrase",
+        "phonetic": "/teɪk ˈsʌmθɪŋ ˈsɪəriəsli/"
+    },
+    {
+        "word": "Location",
+        "definition": "vị trí, địa điểm",
+        "type": "N",
+        "phonetic": "/ləʊˈkeɪʃn/"
+    },
+    {
+        "word": "Diverse culture",
+        "definition": "văn hóa đa dạng",
+        "type": "N",
+        "phonetic": "/daɪˈvɜːrs ˈkʌltʃər/"
+    },
+    {
+        "word": "Serve",
+        "definition": "phục vụ, dọn (thức ăn)",
+        "type": "V",
+        "phonetic": "/sɜːrv/"
+    },
+    {
+        "word": "Tourist attraction",
+        "definition": "điểm thu hút khách du lịch",
+        "type": "N",
+        "phonetic": "/ˈtʊrɪst əˈtrækʃn/"
+    },
+    {
+        "word": "Integrate",
+        "definition": "hội nhập, hòa nhập",
+        "type": "V",
+        "phonetic": "/ˈɪntɪɡreɪt/"
+    },
+    {
+        "word": "Integration",
+        "definition": "sự hội nhập, sự hòa nhập",
+        "type": "N",
+        "phonetic": "/ˌɪntɪˈɡreɪʃn/"
+    },
+    {
+        "word": "Interact",
+        "definition": "tương tác, giao tiếp",
+        "type": "V",
+        "phonetic": "/ˌɪntərˈækt/"
+    },
+    {
+        "word": "Interaction",
+        "definition": "sự tương tác, sự giao tiếp",
+        "type": "N",
+        "phonetic": "/ˌɪntərˈækʃn/"
+    },
+    {
+        "word": "Effect",
+        "definition": "ảnh hưởng, tác động (kết quả)",
+        "type": "N",
+        "phonetic": "/ɪˈfekt/"
+    },
+    {
+        "word": "Affect",
+        "definition": "ảnh hưởng, tác động (hành động)",
+        "type": "V",
+        "phonetic": "/əˈfekt/"
+    },
+    {
+        "word": "Impact",
+        "definition": "tác động mạnh, sự va chạm",
+        "type": "N / V",
+        "phonetic": "/ˈɪmpækt/"
+    },
+    {
+        "word": "influence",
+        "definition": "ảnh hưởng (lâu dài)",
+        "type": "N",
+        "phonetic": "/ˈɪn.flu.əns/"
+    },
+    {
+        "word": "Belief",
+        "definition": "niềm tin, tín ngưỡng",
+        "type": "N",
+        "phonetic": "/bɪˈliːf/"
+    },
+    {
+        "word": "Respect",
+        "definition": "tôn trọng, khía cạnh",
+        "type": "V / N",
+        "phonetic": "/rɪˈspekt/"
+    },
+    {
+        "word": "Aspect",
+        "definition": "khía cạnh",
+        "type": "N",
+        "phonetic": "/ˈæspekt/"
+    },
+    {
+        "word": "Variety",
+        "definition": "sự đa dạng, nhiều loại",
+        "type": "N",
+        "phonetic": "/vəˈraɪəti/"
+    },
+    {
+        "word": "Element",
+        "definition": "yếu tố, thành phần",
+        "type": "N",
+        "phonetic": "/ˈelɪmənt/"
+    },
+    {
+        "word": "Factor",
+        "definition": "nhân tố, yếu tố",
+        "type": "N",
+        "phonetic": "/ˈfæktər/"
+    },
+    {
+        "word": "Reflect",
+        "definition": "phản ánh, suy nghĩ",
+        "type": "V",
+        "phonetic": "/rɪˈflekt/"
+    },
+    {
+        "word": "Cultural richness",
+        "definition": "sự phong phú văn hóa",
+        "type": "N",
+        "phonetic": "/ˈkʌltʃərəl ˈrɪtʃnəs/"
+    }
+      ]
+    },
+    {
+      "id": "grade12_unit3",
+      "title": "Lớp 12 - Unit 3: Green Living",
+      "flashcards": [
+        {
+		"word": "awareness",
+		"definition": "sự nhận thức",
+		"type": "n",
+		"phonetic": "/ə'weənəs/"
+	},
+	{
+		"word": "carbon footprint",
+		"definition": "khí thải nhà kính",
+		"type": "n",
+		"phonetic": "/ka:bən 'futprint/"
+	},
+	{
+		"word": "resource",
+		"definition": "nguồn tài nguyên",
+		"type": "n",
+		"phonetic": "/ri'sɔ:s/"
+	},
+	{
+		"word": "efficiently",
+		"definition": "một cách hiệu quả",
+		"type": "adv",
+		"phonetic": "/ɪ'fɪʃntli/"
+	},
+	{
+		"word": "eco-friendly",
+		"definition": "thân thiện / tốt cho hệ sinh thái",
+		"type": "adj",
+		"phonetic": "/i:kəʊ 'frendli/"
+	},
+	{
+		"word": "decompose",
+		"definition": "phân huỷ",
+		"type": "v",
+		"phonetic": "/di:kəm'pəʊz/"
+	},
+	{
+		"word": "reusable",
+		"definition": "có thể tái sử dụng",
+		"type": "adj",
+		"phonetic": "/ri:ju:zəbl/"
+	},
+	{
+		"word": "single-use",
+		"definition": "dùng một lần",
+		"type": "adj",
+		"phonetic": "/sɪŋgl 'ju:s/"
+	},
+	{
+		"word": "ecotourism",
+		"definition": "du lịch sinh thái",
+		"type": "n",
+		"phonetic": "/'i:kəʊtʊərɪzəm/"
+	},
+	{
+		"word": "waste",
+		"definition": "rác thải",
+		"type": "n",
+		"phonetic": "/weɪst/"
+	},
+	{
+		"word": "landfill",
+		"definition": "bãi rác",
+		"type": "n",
+		"phonetic": "/'lændfɪl/"
+	},
+	{
+		"word": "reuse",
+		"definition": "tái sử dụng",
+		"type": "v",
+		"phonetic": "/ri:ju:z/"
+	},
+	{
+		"word": "packaging",
+		"definition": "bao bì",
+		"type": "n",
+		"phonetic": "/'pækɪdʒɪŋ/"
+	},
+	{
+		"word": "container",
+		"definition": "thùng, hộp, gói",
+		"type": "n",
+		"phonetic": "/kən'teɪnə(r)/"
+	},
+	{
+		"word": "recyclable",
+		"definition": "có thể tái chế",
+		"type": "adj",
+		"phonetic": "/ri:'saɪkləbl/"
+	},
+	{
+		"word": "cardboard",
+		"definition": "bìa cứng, làm bằng bìa cứng",
+		"type": "n/adj",
+		"phonetic": "/'ka:dbɔ:d/"
+	},
+	{
+		"word": "leftover",
+		"definition": "thức ăn thừa",
+		"type": "n",
+		"phonetic": "/'leftəʊvə(r)/"
+	},
+	{
+		"word": "contaminated",
+		"definition": "nhiễm độc, nhiễm khuẩn",
+		"type": "adj",
+		"phonetic": "/kən'tæmɪneɪtɪd/"
+	},
+	{
+		"word": "compost",
+		"definition": "phân hữu cơ",
+		"type": "n",
+		"phonetic": "/'kɒmpɒst/"
+	},
+	{
+		"word": "sort",
+		"definition": "phân loại",
+		"type": "v",
+		"phonetic": "/sɔ:t/"
+	},
+	{
+		"word": "layer",
+		"definition": "tầng, lớp",
+		"type": "n",
+		"phonetic": "/'leɪə(r)/"
+	},
+	{
+		"word": "household waste",
+		"definition": "rác thải sinh hoạt",
+		"type": "n",
+		"phonetic": "/haʊsəʊld weɪst/"
+	},
+	{
+		"word": "fruit peel",
+		"definition": "vỏ hoa quả",
+		"type": "n",
+		"phonetic": "/'fru:t pi:l/"
+	},
+	{
+		"word": "pile",
+		"definition": "đống",
+		"type": "n",
+		"phonetic": "/paɪl/"
+	},
+	{
+		"word": "recycle",
+		"definition": "tái chế",
+		"type": "v",
+		"phonetic": "/ri:'saɪkl/"
+	},
+	{
+		"word": "sustainable",
+		"definition": "bền vững, thân thiện với môi trường",
+		"type": "adj",
+		"phonetic": "/sə'steɪnəbl/"
+	},
+	{
+		"word": "release",
+		"definition": "thải ra",
+		"type": "v",
+		"phonetic": "/rɪ'li:s/"
+	},
+	{
+		"word": "raise awareness",
+		"definition": "nâng cao nhận thức",
+		"type": "phrase",
+		"phonetic": ""
+	},
+	{
+		"word": "clean up",
+		"definition": "dọn dẹp",
+		"type": "phrase",
+		"phonetic": ""
+	},
+	{
+		"word": "throw something away",
+		"definition": "vứt thứ gì đó",
+		"type": "phrase",
+		"phonetic": ""
+	},
+	{
+		"word": "a waste of something",
+		"definition": "lãng phí thứ gì",
+		"type": "phrase",
+		"phonetic": ""
+	},
+	{
+		"word": "go green",
+		"definition": "sống xanh",
+		"type": "phrase",
+		"phonetic": ""
+	},
+	{
+		"word": "get rid of",
+		"definition": "loại bỏ",
+		"type": "phrase",
+		"phonetic": ""
+	},
+	{
+		"word": "rinse out",
+		"definition": "rửa sạch",
+		"type": "phrase",
+		"phonetic": ""
+	},
+	{
+		"word": "in the long run",
+		"definition": "về lâu dài",
+		"type": "phrase",
+		"phonetic": ""
+	},
+	{
+		"word": "in the medium",
+		"definition": "trong khoảng thời gian không xa",
+		"type": "phrase",
+		"phonetic": ""
+	},
+	{
+		"word": "in the short term",
+		"definition": "trong khoảng thời gian trước mắt",
+		"type": "phrase",
+		"phonetic": ""
+	}
+      ]
+    },
+    {
+      "id": "grade12_unit4",
+      "title": "Lớp 12 - Unit 4: Urbanisation",
+      "flashcards": [
+        {
+		"word": "high-rise",
+		"definition": "cao tầng",
+		"type": "adj",
+		"phonetic": "/'haɪ raɪz/"
+	},
+	{
+		"word": "urban",
+		"definition": "thuộc về đô thị",
+		"type": "adj",
+		"phonetic": "/'ɜ:bən/"
+	},
+	{
+		"word": "urban sprawl",
+		"definition": "sự bành trướng đô thị",
+		"type": "n.p",
+		"phonetic": "/'ɜ:bən sprɔ:l/"
+	},
+	{
+		"word": "urbanisation",
+		"definition": "đô thị hoá",
+		"type": "n",
+		"phonetic": "/,ɜ:bənaɪ'zeɪʃən/"
+	},
+	{
+		"word": "leisure",
+		"definition": "sự giải trí, sự thư giãn",
+		"type": "n",
+		"phonetic": "/'leʒə(r)/"
+	},
+	{
+		"word": "convenience store",
+		"definition": "cửa hàng tiện lợi",
+		"type": "n",
+		"phonetic": "/kən'vi:niəns stɔ:(r)/"
+	},
+	{
+		"word": "convenient",
+		"definition": "thuận tiện",
+		"type": "adj",
+		"phonetic": "/kən'vi:niənt/"
+	},
+	{
+		"word": "crowded",
+		"definition": "đông đúc",
+		"type": "adj",
+		"phonetic": "/'kraʊdɪd/"
+	},
+	{
+		"word": "rush hour",
+		"definition": "giờ cao điểm",
+		"type": "n.p",
+		"phonetic": "/'rʌʃ aʊə(r)/"
+	},
+	{
+		"word": "afford",
+		"definition": "có đủ khả năng chi trả",
+		"type": "v",
+		"phonetic": "/ə'fɔ:d/"
+	},
+	{
+		"word": "housing",
+		"definition": "nhà ở",
+		"type": "n",
+		"phonetic": "/'haʊzɪŋ/"
+	},
+	{
+		"word": "expand",
+		"definition": "mở rộng",
+		"type": "v",
+		"phonetic": "/ɪk'spænd/"
+	},
+	{
+		"word": "seek",
+		"definition": "tìm kiếm",
+		"type": "v",
+		"phonetic": "/si:k/"
+	},
+	{
+		"word": "unemployment",
+		"definition": "tình trạng thất nghiệp",
+		"type": "n",
+		"phonetic": "/'ʌnɪm'plɔɪmənt/"
+	},
+	{
+		"word": "affordable",
+		"definition": "(giá cả) rẻ, phải chăng",
+		"type": "adj",
+		"phonetic": "/ə'fɔ:dəbl/"
+	},
+	{
+		"word": "infrastructure",
+		"definition": "cơ sở hạ tầng",
+		"type": "n",
+		"phonetic": "/'ɪnfrəstrʌktʃə(r)/"
+	},
+	{
+		"word": "resident",
+		"definition": "người dân",
+		"type": "n",
+		"phonetic": "/'rezɪdənt/"
+	},
+	{
+		"word": "colonial",
+		"definition": "thuộc địa, thuộc dân",
+		"type": "adj",
+		"phonetic": "/kə'ləʊniəl/"
+	},
+	{
+		"word": "gradually",
+		"definition": "dần dần",
+		"type": "adv",
+		"phonetic": "/'grædʒuəli/"
+	},
+	{
+		"word": "modernise",
+		"definition": "hiện đại hoá",
+		"type": "v",
+		"phonetic": "/'mɒdənaɪz/"
+	},
+	{
+		"word": "concern",
+		"definition": "mối lo ngại",
+		"type": "n",
+		"phonetic": "/kən'sɜ:n/"
+	},
+	{
+		"word": "rapidly",
+		"definition": "rất nhanh, với tốc độ cao",
+		"type": "adv",
+		"phonetic": "/'ræpɪdli/"
+	},
+	{
+		"word": "reliable",
+		"definition": "đáng tin cậy",
+		"type": "adj",
+		"phonetic": "/rɪ'laɪəbl/"
+	}
+      ]
+    },
+    {
+      "id": "grade12_unit5",
+      "title": "Lớp 12 - Unit 5: The World Of Work",
+      "flashcards": [
+        {
+		"word": "shift",
+		"definition": "ca làm việc",
+		"type": "n",
+		"phonetic": "/ʃɪft/"
+	},
+	{
+		"word": "tiring",
+		"definition": "gây mệt mỏi",
+		"type": "adj",
+		"phonetic": "/'taɪərɪŋ/"
+	},
+	{
+		"word": "stressful",
+		"definition": "căng thẳng",
+		"type": "adj",
+		"phonetic": "/'stresfl/"
+	},
+	{
+		"word": "nine-to-five",
+		"definition": "giờ hành chính",
+		"type": "adj",
+		"phonetic": "/naɪn-tə-faɪv/"
+	},
+	{
+		"word": "accountant",
+		"definition": "kế toán viên",
+		"type": "n",
+		"phonetic": "/ə'kaʊntənt/"
+	},
+	{
+		"word": "overtime",
+		"definition": "ngoài giờ làm việc",
+		"type": "n",
+		"phonetic": "/'əʊvətaɪm/"
+	},
+	{
+		"word": "challenging",
+		"definition": "đầy thách thức",
+		"type": "adj",
+		"phonetic": "/'tʃælɪndʒɪŋ/"
+	},
+	{
+		"word": "relevant",
+		"definition": "có liên quan",
+		"type": "adj",
+		"phonetic": "/'reləvənt/"
+	},
+	{
+		"word": "bonus",
+		"definition": "tiền thưởng",
+		"type": "n",
+		"phonetic": "/'bəʊnəs/"
+	},
+	{
+		"word": "employ",
+		"definition": "tuyển dụng",
+		"type": "v",
+		"phonetic": "/ɪm'plɔɪ/"
+	},
+	{
+		"word": "rewarding",
+		"definition": "đáng, xứng đáng",
+		"type": "adj",
+		"phonetic": "/rɪ'wɔ:dɪŋ/"
+	},
+	{
+		"word": "qualification",
+		"definition": "bằng cấp, trình độ",
+		"type": "n",
+		"phonetic": "/,kwɒlɪfɪ'keɪʃn/"
+	},
+	{
+		"word": "well-paid",
+		"definition": "được trả lương cao",
+		"type": "adj",
+		"phonetic": "/,wel 'peɪd/"
+	},
+	{
+		"word": "vacancy",
+		"definition": "vị trí công việc còn trống",
+		"type": "n",
+		"phonetic": "/'veɪkənsi/"
+	},
+	{
+		"word": "flexible",
+		"definition": "linh hoạt",
+		"type": "adj",
+		"phonetic": "/'fleksəbl/"
+	},
+	{
+		"word": "review",
+		"definition": "bài đánh giá",
+		"type": "n",
+		"phonetic": "/rɪ'vju:/"
+	},
+	{
+		"word": "hard-working",
+		"definition": "chăm chỉ",
+		"type": "adj",
+		"phonetic": "/,hɑ:d 'wɜ:kɪŋ/"
+	},
+	{
+		"word": "on-the-job",
+		"definition": "trong công việc, khi đang làm việc",
+		"type": "adj",
+		"phonetic": "/,ɒn-ðə-'dʒɒb/"
+	},
+	{
+		"word": "wage",
+		"definition": "tiền công",
+		"type": "n",
+		"phonetic": "/weɪdʒ/"
+	},
+	{
+		"word": "responsibility",
+		"definition": "trách nhiệm",
+		"type": "n",
+		"phonetic": "/rɪ,spɒnsə'bɪləti/"
+	},
+	{
+		"word": "supervise",
+		"definition": "giám sát",
+		"type": "v",
+		"phonetic": "/'su:pəvaɪz/"
+	},
+	{
+		"word": "attendance",
+		"definition": "chuyên cần",
+		"type": "n",
+		"phonetic": "/ə'tendəns/"
+	},
+	{
+		"word": "responsible",
+		"definition": "có trách nhiệm",
+		"type": "adj",
+		"phonetic": "/rɪ'spɒnsəbl/"
+	},
+	{
+		"word": "enthusiastic",
+		"definition": "nhiệt tình, hào hứng",
+		"type": "adj",
+		"phonetic": "/ɪn,θju:zi'æstɪk/"
+	},
+	{
+		"word": "on a night shift",
+		"definition": "làm ca buổi tối",
+		"type": "collocation/phrase",
+		"phonetic": ""
+	},
+	{
+		"word": "go on a business trip",
+		"definition": "đi công tác",
+		"type": "collocation/phrase",
+		"phonetic": ""
+	},
+	{
+		"word": "follow in one's footsteps",
+		"definition": "nối gót, theo nghiệp ai",
+		"type": "collocation/phrase",
+		"phonetic": ""
+	},
+	{
+		"word": "apply for something",
+		"definition": "ứng tuyển cho vị trí gì",
+		"type": "collocation/phrase",
+		"phonetic": ""
+	},
+	{
+		"word": "interfere with something",
+		"definition": "can thiệp vào cái gì",
+		"type": "collocation/phrase",
+		"phonetic": ""
+	},
+	{
+		"word": "wait on tables",
+		"definition": "phục vụ đồ ăn thức uống cho khách trong nhà hàng",
+		"type": "collocation/phrase",
+		"phonetic": ""
+	},
+	{
+		"word": "give rise to something",
+		"definition": "khiến điều gì xuất hiện",
+		"type": "collocation/phrase",
+		"phonetic": ""
+	}
+      ]
+    },
+    {
+      "id": "grade12_unit6",
+      "title": "Lớp 12 - Unit 6: Artificial Intelligence",
+      "flashcards": [
+        {
+		"word": "human-like",
+		"definition": "giống con người",
+		"type": "adj",
+		"phonetic": "/'hju:mən laɪk/"
+	},
+	{
+		"word": "interact",
+		"definition": "tương tác",
+		"type": "v",
+		"phonetic": "/,ɪntər'ækt/"
+	},
+	{
+		"word": "activate",
+		"definition": "kích hoạt",
+		"type": "v",
+		"phonetic": "/'æktɪveɪt/"
+	},
+	{
+		"word": "application",
+		"definition": "sự ứng dụng, sự áp dụng",
+		"type": "n",
+		"phonetic": "/,æplɪ'keɪʃn/"
+	},
+	{
+		"word": "facial recognition",
+		"definition": "nhận diện khuôn mặt",
+		"type": "n",
+		"phonetic": "/,feɪʃl ,rekəg'nɪʃn/"
+	},
+	{
+		"word": "virtual",
+		"definition": "ảo, không có thật",
+		"type": "adj",
+		"phonetic": "/'vɜ:tʃuəl/"
+	},
+	{
+		"word": "security",
+		"definition": "an ninh",
+		"type": "n",
+		"phonetic": "/sɪ'kjʊərəti/"
+	},
+	{
+		"word": "advanced",
+		"definition": "tiên tiến, trình độ cao",
+		"type": "adj",
+		"phonetic": "/əd'vɑ:nst/"
+	},
+	{
+		"word": "artificial intelligence",
+		"definition": "trí thông minh nhân tạo",
+		"type": "n",
+		"phonetic": "/,ɑ:tɪfɪʃl ɪn'telɪdʒəns/"
+	},
+	{
+		"word": "chatbot",
+		"definition": "hộp trò chuyện",
+		"type": "n",
+		"phonetic": "/'tʃætbɒt/"
+	},
+	{
+		"word": "programme",
+		"definition": "lập trình, đặt chương trình",
+		"type": "v",
+		"phonetic": "/'prəʊgræm/"
+	},
+	{
+		"word": "analyse",
+		"definition": "phân tích",
+		"type": "v",
+		"phonetic": "/'ænəlaɪz/"
+	},
+	{
+		"word": "real-time",
+		"definition": "nhanh chóng, ngay lập tức",
+		"type": "n/adj",
+		"phonetic": "/,riəl 'taɪm/"
+	},
+	{
+		"word": "effortlessly",
+		"definition": "một cách dễ dàng",
+		"type": "adv",
+		"phonetic": "/'efətləsli/"
+	},
+	{
+		"word": "digital",
+		"definition": "trực tuyến, thuộc kỹ thuật số",
+		"type": "adj",
+		"phonetic": "/'dɪdʒɪtl/"
+	},
+	{
+		"word": "portfolio",
+		"definition": "hồ sơ",
+		"type": "n",
+		"phonetic": "/pɔ:t'fəʊliəʊ/"
+	},
+	{
+		"word": "upload",
+		"definition": "đăng tải",
+		"type": "v",
+		"phonetic": "/ʌp'ləʊd/"
+	},
+	{
+		"word": "interactive",
+		"definition": "mang tính tương tác",
+		"type": "adj",
+		"phonetic": "/,ɪntər'æktɪv/"
+	},
+	{
+		"word": "virtual reality",
+		"definition": "thực tế ảo",
+		"type": "n",
+		"phonetic": "/,vɜ:tʃuəl ri'æləti/"
+	},
+	{
+		"word": "hands-on",
+		"definition": "thực tiễn, thực tế",
+		"type": "adj",
+		"phonetic": "/hændz 'ɒn/"
+	},
+	{
+		"word": "personalised",
+		"definition": "được cá nhân hoá",
+		"type": "adj",
+		"phonetic": "/'pɜ:sənəlaɪzd/"
+	},
+	{
+		"word": "platform",
+		"definition": "nền tảng",
+		"type": "n",
+		"phonetic": "/'plætfɔ:m/"
+	},
+	{
+		"word": "distance-learning",
+		"definition": "học từ xa",
+		"type": "n",
+		"phonetic": "/'dɪstəns 'lɜ:nɪŋ/"
+	},
+	{
+		"word": "speech recognition",
+		"definition": "khả năng nhận diện giọng nói",
+		"type": "n",
+		"phonetic": "/'spi:tʃ ,rekəg'nɪʃn/"
+	},
+	{
+		"word": "evolution",
+		"definition": "sự tiến hoá, sự phát triển",
+		"type": "n",
+		"phonetic": "/,evə'lu:ʃn/"
+	},
+	{
+		"word": "observe",
+		"definition": "quan sát",
+		"type": "v",
+		"phonetic": "/əb'zɜ:v/"
+	},
+	{
+		"word": "milestone",
+		"definition": "mốc son, sự kiện quan trọng",
+		"type": "n",
+		"phonetic": "/'maɪlstəʊn/"
+	},
+	{
+		"word": "provoke",
+		"definition": "kích thích, gây ra",
+		"type": "v",
+		"phonetic": "/prə'vəʊk/"
+	},
+	{
+		"word": "self-driving",
+		"definition": "không người lái",
+		"type": "adj",
+		"phonetic": "/,self 'draɪvɪŋ/"
+	},
+	{
+		"word": "imitate",
+		"definition": "bắt chước",
+		"type": "v",
+		"phonetic": "/'ɪmɪteɪt/"
+	},
+	{
+		"word": "upgrade",
+		"definition": "nâng cấp",
+		"type": "v",
+		"phonetic": "/ʌp'greɪd/"
+	},
+	{
+		"word": "voice command",
+		"definition": "ra lệnh bằng giọng nói",
+		"type": "n.p",
+		"phonetic": "/vɔɪs kə'mɑ:nd/"
+	},
+	{
+		"word": "be capable of doing something",
+		"definition": "có khả năng làm gì",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "benefit from something",
+		"definition": "hưởng lợi từ điều gì",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "take over",
+		"definition": "đảm nhiệm, tiếp quản",
+		"type": "structure",
+		"phonetic": ""
+	}
+      ]
+    },
+    {
+      "id": "grade12_unit7",
+      "title": "Lớp 12 - Unit 7: The World Of Mass Media",
+      "flashcards": [
+        {
+		"word": "publicity",
+		"definition": "truyền thông, quảng bá",
+		"type": "n",
+		"phonetic": "/pʌb'lɪsəti/"
+	},
+	{
+		"word": "interest",
+		"definition": "sự quan tâm, hứng thú",
+		"type": "n",
+		"phonetic": "/'ɪntrəst/, /'ɪntrest/"
+	},
+	{
+		"word": "place",
+		"definition": "đặt, rao, đăng (tin, quảng cáo)",
+		"type": "v",
+		"phonetic": "/pleɪs/"
+	},
+	{
+		"word": "advert",
+		"definition": "quảng cáo",
+		"type": "n",
+		"phonetic": "/'ædvɜ:t/"
+	},
+	{
+		"word": "promote",
+		"definition": "quảng bá",
+		"type": "v",
+		"phonetic": "/prə'məʊt/"
+	},
+	{
+		"word": "profit-making",
+		"definition": "tạo lợi nhuận",
+		"type": "adj",
+		"phonetic": "/'prɒfɪt ,meɪkɪŋ/"
+	},
+	{
+		"word": "poster",
+		"definition": "áp phích",
+		"type": "n",
+		"phonetic": "/'pəʊstə(r)/"
+	},
+	{
+		"word": "viewer",
+		"definition": "người xem",
+		"type": "n",
+		"phonetic": "/'vju:ə(r)/"
+	},
+	{
+		"word": "commercial",
+		"definition": "quảng cáo",
+		"type": "n",
+		"phonetic": "/kə'mɜ:ʃl/"
+	},
+	{
+		"word": "advertise",
+		"definition": "quảng cáo",
+		"type": "v",
+		"phonetic": "/'ædvətaɪz/"
+	},
+	{
+		"word": "presence",
+		"definition": "sức thu hút, sức ảnh hưởng",
+		"type": "n",
+		"phonetic": "/'prezns/"
+	},
+	{
+		"word": "reliable",
+		"definition": "đáng tin cậy",
+		"type": "adj",
+		"phonetic": "/rɪ'laɪəbl/"
+	},
+	{
+		"word": "bias",
+		"definition": "thiên vị",
+		"type": "n",
+		"phonetic": "/'baɪəs/"
+	},
+	{
+		"word": "fake news",
+		"definition": "tin giả",
+		"type": "n",
+		"phonetic": "/,feɪk 'nju:z/"
+	},
+	{
+		"word": "the press",
+		"definition": "báo chí",
+		"type": "n",
+		"phonetic": "/ðə pres/"
+	},
+	{
+		"word": "update",
+		"definition": "cập nhật",
+		"type": "v",
+		"phonetic": "/ʌp'deɪt/"
+	},
+	{
+		"word": "distribute",
+		"definition": "phân phối",
+		"type": "v",
+		"phonetic": "/dɪ'strɪbju:t/"
+	},
+	{
+		"word": "broadcast",
+		"definition": "(chương trình) phát sóng",
+		"type": "n/v",
+		"phonetic": "/'brɔ:dkɑ:st/"
+	},
+	{
+		"word": "convenient",
+		"definition": "thuận tiện",
+		"type": "adj",
+		"phonetic": "/kən'vi:niənt/"
+	},
+	{
+		"word": "content",
+		"definition": "nội dung",
+		"type": "n",
+		"phonetic": "/'kɒntent/"
+	},
+	{
+		"word": "accessible",
+		"definition": "có thể tiếp cận được",
+		"type": "adj",
+		"phonetic": "/ək'sesəbl/"
+	},
+	{
+		"word": "interactive",
+		"definition": "có thể tương tác được",
+		"type": "adj",
+		"phonetic": "/,ɪntər'æktɪv/"
+	},
+	{
+		"word": "instant",
+		"definition": "ngay lập tức",
+		"type": "adj",
+		"phonetic": "/'ɪnstənt/"
+	},
+	{
+		"word": "reach",
+		"definition": "tiếp cận",
+		"type": "v",
+		"phonetic": "/ri:tʃ/"
+	},
+	{
+		"word": "flexible",
+		"definition": "linh hoạt",
+		"type": "adj",
+		"phonetic": "/'fleksəbl/"
+	},
+	{
+		"word": "credible",
+		"definition": "đáng tin cậy",
+		"type": "adj",
+		"phonetic": "/'kredəbl/"
+	},
+	{
+		"word": "fact-check",
+		"definition": "kiểm chứng thông tin",
+		"type": "v",
+		"phonetic": "/'fækt tʃek/"
+	},
+	{
+		"word": "visual",
+		"definition": "thị giác / có hình ảnh",
+		"type": "adj",
+		"phonetic": "/'vɪʒuəl/"
+	},
+	{
+		"word": "the mass media",
+		"definition": "phương tiện truyền thông đại chúng",
+		"type": "n",
+		"phonetic": "/ðə mæs 'mi:diə/"
+	},
+	{
+		"word": "billboard",
+		"definition": "biển quảng cáo",
+		"type": "n",
+		"phonetic": "/'bɪlbɔ:d/"
+	},
+	{
+		"word": "loudspeaker",
+		"definition": "loa phát thanh",
+		"type": "n",
+		"phonetic": "/,laʊd'spi:kə(r)/"
+	},
+	{
+		"word": "source",
+		"definition": "nguồn tin",
+		"type": "n",
+		"phonetic": "/sɔ:s/"
+	},
+	{
+		"word": "spread",
+		"definition": "(sự) lan truyền",
+		"type": "n/v",
+		"phonetic": "/spred/"
+	},
+	{
+		"word": "be in charge of (doing) something",
+		"definition": "chịu trách nhiệm làm việc gì",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "attract one's attention",
+		"definition": "thu hút sự chú ý của ai",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "draw attention to something",
+		"definition": "thu hút sự chú ý tới thứ gì",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "cannot afford to do something",
+		"definition": "không đủ khả năng (tài chính) để làm gì",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "put up something",
+		"definition": "đặt, trưng bày thứ gì",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "pay attention to something",
+		"definition": "chú ý tới thứ gì",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "be here to stay",
+		"definition": "sẽ tồn tại trong một thời gian dài",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "be on the rise",
+		"definition": "đang gia tăng",
+		"type": "structure",
+		"phonetic": ""
+	}
+      ]
+    },
+    {
+      "id": "grade12_unit8",
+      "title": "Lớp 12 - Unit 8: Wildlife Conservation",
+      "flashcards": [
+        {
+		"word": "endangered",
+		"definition": "bị đe doạ, gặp nguy hiểm",
+		"type": "adj",
+		"phonetic": "/ɪn'deɪndʒəd/"
+	},
+	{
+		"word": "primate",
+		"definition": "bộ (họ) linh trưởng",
+		"type": "n",
+		"phonetic": "/'praɪmeɪt/"
+	},
+	{
+		"word": "rescue",
+		"definition": "(sự) giải cứu",
+		"type": "n/v",
+		"phonetic": "/'reskju:/"
+	},
+	{
+		"word": "enclosure",
+		"definition": "chuồng thú",
+		"type": "n",
+		"phonetic": "/ɪn'kləʊʒə(r)/"
+	},
+	{
+		"word": "mammal",
+		"definition": "động vật có vú",
+		"type": "n",
+		"phonetic": "/'mæml/"
+	},
+	{
+		"word": "ape",
+		"definition": "khỉ không đuôi",
+		"type": "n",
+		"phonetic": "/eɪp/"
+	},
+	{
+		"word": "sign language",
+		"definition": "ngôn ngữ ký hiệu",
+		"type": "n",
+		"phonetic": "/'saɪn 'læŋgwɪdʒ/"
+	},
+	{
+		"word": "species",
+		"definition": "loài",
+		"type": "n",
+		"phonetic": "/'spi:ʃi:z/"
+	},
+	{
+		"word": "house",
+		"definition": "cung cấp nơi ở",
+		"type": "v",
+		"phonetic": "/haʊz/"
+	},
+	{
+		"word": "gibbon",
+		"definition": "con vượn",
+		"type": "n",
+		"phonetic": "/'ɡɪbən/"
+	},
+	{
+		"word": "threatened",
+		"definition": "bị đe doạ",
+		"type": "adj",
+		"phonetic": "/'θretnd/"
+	},
+	{
+		"word": "critically",
+		"definition": "nghiêm trọng",
+		"type": "adv",
+		"phonetic": "/'krɪtɪkli/"
+	},
+	{
+		"word": "threat",
+		"definition": "mối đe dọa",
+		"type": "n",
+		"phonetic": "/θret/"
+	},
+	{
+		"word": "habitat loss",
+		"definition": "mất môi trường sống",
+		"type": "n",
+		"phonetic": "/'hæbɪtæt lɒs/"
+	},
+	{
+		"word": "deforestation",
+		"definition": "nạn chặt phá rừng",
+		"type": "n",
+		"phonetic": "/di:,fɒrɪ'steɪʃn/"
+	},
+	{
+		"word": "illegal",
+		"definition": "trái phép",
+		"type": "adj",
+		"phonetic": "/ɪ'li:ɡl/"
+	},
+	{
+		"word": "hunt",
+		"definition": "săn bắt",
+		"type": "v",
+		"phonetic": "/hʌnt/"
+	},
+	{
+		"word": "poach",
+		"definition": "săn bắn bất hợp pháp",
+		"type": "v",
+		"phonetic": "/pəʊtʃ/"
+	},
+	{
+		"word": "cage",
+		"definition": "cái lồng, cái chuồng",
+		"type": "n",
+		"phonetic": "/keɪdʒ/"
+	},
+	{
+		"word": "monitor",
+		"definition": "giám sát",
+		"type": "v",
+		"phonetic": "/'mɒnɪtə(r)/"
+	},
+	{
+		"word": "release",
+		"definition": "thả ra",
+		"type": "v",
+		"phonetic": "/rɪ'li:s/"
+	},
+	{
+		"word": "extinct",
+		"definition": "tuyệt chủng",
+		"type": "adj",
+		"phonetic": "/ɪk'stɪŋkt/"
+	},
+	{
+		"word": "survive",
+		"definition": "sống sót",
+		"type": "v",
+		"phonetic": "/sə'vaɪv/"
+	},
+	{
+		"word": "captivity",
+		"definition": "sự nuôi nhốt",
+		"type": "n",
+		"phonetic": "/kæp'tɪvəti/"
+	},
+	{
+		"word": "conserve",
+		"definition": "bảo tồn",
+		"type": "v",
+		"phonetic": "/kən'sɜ:v/"
+	},
+	{
+		"word": "rare",
+		"definition": "hiếm",
+		"type": "adj",
+		"phonetic": "/reə(r)/"
+	},
+	{
+		"word": "recover",
+		"definition": "khôi phục, phục hồi",
+		"type": "v",
+		"phonetic": "/rɪ'kʌvə(r)/"
+	},
+	{
+		"word": "coral reef",
+		"definition": "rạn san hô",
+		"type": "n",
+		"phonetic": "/'kɒrəl 'ri:f/"
+	},
+	{
+		"word": "wildlife",
+		"definition": "động vật hoang dã",
+		"type": "n",
+		"phonetic": "/'waɪldlaɪf/"
+	},
+	{
+		"word": "vulnerable",
+		"definition": "dễ bị tổn thương",
+		"type": "adj",
+		"phonetic": "/'vʌlnərəbl/"
+	},
+	{
+		"word": "conservation",
+		"definition": "sự bảo tồn",
+		"type": "n",
+		"phonetic": "/,kɒnsə'veɪʃn/"
+	},
+	{
+		"word": "spawning ground",
+		"definition": "nơi đẻ trứng",
+		"type": "n.p",
+		"phonetic": "/'spɔ:nɪŋ graʊnd/"
+	},
+	{
+		"word": "debris",
+		"definition": "mảnh vỡ, mảnh vụn",
+		"type": "n",
+		"phonetic": "/'debri:/"
+	},
+	{
+		"word": "nursery",
+		"definition": "vườn ươm",
+		"type": "n",
+		"phonetic": "/'nɜ:səri/"
+	},
+	{
+		"word": "marine",
+		"definition": "thuộc về biển",
+		"type": "adj",
+		"phonetic": "/mə'ri:n/"
+	},
+	{
+		"word": "degrade",
+		"definition": "xuống cấp",
+		"type": "v",
+		"phonetic": "/dɪ'ɡreɪd/"
+	},
+	{
+		"word": "forest clearance",
+		"definition": "sự chặt, phá rừng",
+		"type": "n.p",
+		"phonetic": "/'fɒrɪst 'klɪərəns/"
+	},
+	{
+		"word": "hesitate to do something",
+		"definition": "ngần ngại làm gì",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "be home to something",
+		"definition": "là nơi ở, trú ẩn của thứ gì",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "make a big profit",
+		"definition": "kiếm được lợi nhuận cao",
+		"type": "structure",
+		"phonetic": ""
+	}
+      ]
+    },
+    {
+      "id": "grade12_unit9",
+      "title": "Lớp 12 - Unit 9: Career Paths",
+      "flashcards": [
+        {
+		"word": "adviser",
+		"definition": "cố vấn",
+		"type": "n",
+		"phonetic": "/əd'vaɪzə(r)/"
+	},
+	{
+		"word": "career",
+		"definition": "nghề, sự nghiệp",
+		"type": "n",
+		"phonetic": "/kə'rɪə(r)/"
+	},
+	{
+		"word": "pursue",
+		"definition": "theo đuổi",
+		"type": "v",
+		"phonetic": "/pə'sju:/"
+	},
+	{
+		"word": "applicant",
+		"definition": "người nộp đơn xin việc",
+		"type": "n",
+		"phonetic": "/'æplɪkənt/"
+	},
+	{
+		"word": "school-leaver",
+		"definition": "học sinh đã tốt nghiệp",
+		"type": "n",
+		"phonetic": "/'sku:l 'li:və(r)/"
+	},
+	{
+		"word": "automated",
+		"definition": "tự động hoá",
+		"type": "adj",
+		"phonetic": "/'ɔ:təmeɪtɪd/"
+	},
+	{
+		"word": "critical thinking",
+		"definition": "tư duy phản biện",
+		"type": "n",
+		"phonetic": "/,krɪtɪkl 'θɪŋkɪŋ/"
+	},
+	{
+		"word": "decision-making",
+		"definition": "đưa ra quyết định",
+		"type": "n",
+		"phonetic": "/dɪ'sɪʒn ,meɪkɪŋ/"
+	},
+	{
+		"word": "soft skills",
+		"definition": "kỹ năng mềm",
+		"type": "n",
+		"phonetic": "/,sɒft skɪlz/"
+	},
+	{
+		"word": "adapt",
+		"definition": "thay đổi cho phù hợp, thích nghi",
+		"type": "v",
+		"phonetic": "/ə'dæpt/"
+	},
+	{
+		"word": "gain",
+		"definition": "có được",
+		"type": "v",
+		"phonetic": "/ɡeɪn/"
+	},
+	{
+		"word": "passion",
+		"definition": "niềm đam mê",
+		"type": "n",
+		"phonetic": "/'pæʃn/"
+	},
+	{
+		"word": "personality",
+		"definition": "tính cách",
+		"type": "n",
+		"phonetic": "/,pɜ:sə'næləti/"
+	},
+	{
+		"word": "passionate",
+		"definition": "có niềm đam mê với/ dành cho",
+		"type": "adj",
+		"phonetic": "/'pæʃənət/"
+	},
+	{
+		"word": "career path",
+		"definition": "con đường sự nghiệp",
+		"type": "n.p",
+		"phonetic": "/kə'rɪə(r) pɑ:θ/"
+	},
+	{
+		"word": "match",
+		"definition": "phù hợp với",
+		"type": "v",
+		"phonetic": "/mætʃ/"
+	},
+	{
+		"word": "specialty",
+		"definition": "chuyên ngành",
+		"type": "n",
+		"phonetic": "/'speʃəlti/"
+	},
+	{
+		"word": "barista",
+		"definition": "nhân viên pha chế",
+		"type": "n",
+		"phonetic": "/bə'ri:stə/, /bə'rɪstə/"
+	},
+	{
+		"word": "position",
+		"definition": "vị trí",
+		"type": "n",
+		"phonetic": "/pə'zɪʃn/"
+	},
+	{
+		"word": "obsolete",
+		"definition": "lỗi thời",
+		"type": "adj",
+		"phonetic": "/'ɒbsəli:t/"
+	},
+	{
+		"word": "fascinating",
+		"definition": "rất thú vị, hấp dẫn",
+		"type": "adj",
+		"phonetic": "/'fæsɪneɪtɪŋ/"
+	},
+	{
+		"word": "tutor",
+		"definition": "gia sư",
+		"type": "n",
+		"phonetic": "/'tju:tə(r)/"
+	},
+	{
+		"word": "character",
+		"definition": "tính cách, phẩm chất",
+		"type": "n",
+		"phonetic": "/'kærəktə(r)/"
+	},
+	{
+		"word": "CV (curriculum vitae)",
+		"definition": "sơ yếu lý lịch",
+		"type": "n",
+		"phonetic": "/,si: 'vi:/ /kə,rɪkjələm 'vi:taɪ/"
+	},
+	{
+		"word": "childminder",
+		"definition": "người trông trẻ",
+		"type": "n",
+		"phonetic": "/'tʃaɪld,maɪndə(r)/"
+	},
+	{
+		"word": "keep up with something",
+		"definition": "theo kịp, bắt kịp với cái gì",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "look down on somebody",
+		"definition": "coi thường ai",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "take over",
+		"definition": "đảm nhiệm, thay thế",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "be in demand",
+		"definition": "có nhu cầu, được mọi người mong muốn",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "come up with something",
+		"definition": "nảy ra (ý tưởng, giải pháp)",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "deal with something",
+		"definition": "đối phó, giải quyết thứ gì",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "take into account",
+		"definition": "xem xét, cân nhắc",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "live up to",
+		"definition": "đạt tới kỳ vọng của ai",
+		"type": "phrasal verb (3-part)",
+		"phonetic": ""
+	},
+	{
+		"word": "cut down on",
+		"definition": "cắt giảm",
+		"type": "phrasal verb (3-part)",
+		"phonetic": ""
+	},
+	{
+		"word": "get on with",
+		"definition": "hoà hợp với, có mối quan hệ tốt với",
+		"type": "phrasal verb (3-part)",
+		"phonetic": ""
+	},
+	{
+		"word": "put up with",
+		"definition": "chịu đựng",
+		"type": "phrasal verb (3-part)",
+		"phonetic": ""
+	},
+	{
+		"word": "go in for",
+		"definition": "đam mê, theo đuổi một sở thích",
+		"type": "phrasal verb (3-part)",
+		"phonetic": ""
+	},
+	{
+		"word": "get through to",
+		"definition": "liên lạc với ai (qua điện thoại)",
+		"type": "phrasal verb (3-part)",
+		"phonetic": ""
+	},
+	{
+		"word": "look forward to",
+		"definition": "mong đợi điều gì",
+		"type": "phrasal verb (3-part)",
+		"phonetic": ""
+	}
+      ]
+    },
+    {
+      "id": "grade12_unit10",
+      "title": "Lớp 12 - Unit 10: Lifelong Learning",
+      "flashcards": [
+        {
+		"word": "boost",
+		"definition": "tăng cường, cải thiện",
+		"type": "v",
+		"phonetic": "/bu:st/"
+	},
+	{
+		"word": "maintain",
+		"definition": "duy trì",
+		"type": "v",
+		"phonetic": "/meɪn'teɪn/"
+	},
+	{
+		"word": "informed",
+		"definition": "có kiến thức về, có hiểu biết",
+		"type": "adj",
+		"phonetic": "/ɪn'fɔ:md/"
+	},
+	{
+		"word": "night school",
+		"definition": "lớp học buổi tối (dành cho người lớn)",
+		"type": "n",
+		"phonetic": "/'naɪt sku:l/"
+	},
+	{
+		"word": "distance learning",
+		"definition": "học từ xa",
+		"type": "n",
+		"phonetic": "/'dɪstəns 'lɜ:nɪŋ/"
+	},
+	{
+		"word": "well-rounded",
+		"definition": "được phát triển một cách toàn diện",
+		"type": "adj",
+		"phonetic": "/,wel 'raʊndɪd/"
+	},
+	{
+		"word": "learning community",
+		"definition": "cộng đồng học tập",
+		"type": "n.p",
+		"phonetic": "/'lɜ:nɪŋ kə'mju:nəti/"
+	},
+	{
+		"word": "adult education",
+		"definition": "giáo dục cho người lớn",
+		"type": "n",
+		"phonetic": "/'ædʌlt edʒu'keɪʃn/"
+	},
+	{
+		"word": "wonder",
+		"definition": "thắc mắc, băn khoăn",
+		"type": "v",
+		"phonetic": "/'wʌndə(r)/"
+	},
+	{
+		"word": "lifelong",
+		"definition": "trọn đời",
+		"type": "adj",
+		"phonetic": "/'laɪflɒŋ/"
+	},
+	{
+		"word": "relevant",
+		"definition": "phù hợp, liên quan, thích hợp",
+		"type": "adj",
+		"phonetic": "/'reləvənt/"
+	},
+	{
+		"word": "widen",
+		"definition": "mở rộng, tăng thêm",
+		"type": "v",
+		"phonetic": "/'waɪdn/"
+	},
+	{
+		"word": "hardship",
+		"definition": "khó khăn, vất vả",
+		"type": "n",
+		"phonetic": "/'hɑ:dʃɪp/"
+	},
+	{
+		"word": "imprison",
+		"definition": "giam cầm, cầm tù",
+		"type": "v",
+		"phonetic": "/ɪm'prɪzn/"
+	},
+	{
+		"word": "martial art",
+		"definition": "võ thuật",
+		"type": "n",
+		"phonetic": "/,mɑ:ʃl 'ɑ:t/"
+	},
+	{
+		"word": "self-study",
+		"definition": "tự học",
+		"type": "n",
+		"phonetic": "/,self 'stʌdi/"
+	},
+	{
+		"word": "determination",
+		"definition": "sự quyết tâm",
+		"type": "n",
+		"phonetic": "/dɪ,tɜ:mɪ'neɪʃn/"
+	},
+	{
+		"word": "obstacle",
+		"definition": "trở ngại",
+		"type": "n",
+		"phonetic": "/'ɒbstəkl/"
+	},
+	{
+		"word": "distraction",
+		"definition": "sự phân tâm, sự sao lãng",
+		"type": "n",
+		"phonetic": "/dɪ'strækʃn/"
+	},
+	{
+		"word": "acquire",
+		"definition": "có được, đạt được",
+		"type": "v",
+		"phonetic": "/ə'kwaɪə(r)/"
+	},
+	{
+		"word": "complex",
+		"definition": "phức tạp",
+		"type": "adj",
+		"phonetic": "/'kɒmpleks/"
+	},
+	{
+		"word": "pursuit",
+		"definition": "sự theo đuổi",
+		"type": "n",
+		"phonetic": "/pə'sju:t/"
+	},
+	{
+		"word": "motivation",
+		"definition": "động lực",
+		"type": "n",
+		"phonetic": "/,məʊtɪ'veɪʃn/"
+	},
+	{
+		"word": "expand",
+		"definition": "mở rộng",
+		"type": "v",
+		"phonetic": "/ɪk'spænd/"
+	},
+	{
+		"word": "governess",
+		"definition": "gia sư, giáo viên dạy kèm tại nhà",
+		"type": "n",
+		"phonetic": "/'ɡʌvənəs/"
+	},
+	{
+		"word": "overcome",
+		"definition": "vượt qua",
+		"type": "v",
+		"phonetic": "/ˌəʊvə'kʌm/"
+	},
+	{
+		"word": "self-motivated",
+		"definition": "tự tạo động lực cho mình",
+		"type": "adj",
+		"phonetic": "/,self 'məʊtɪveɪtɪd/"
+	},
+	{
+		"word": "broaden",
+		"definition": "mở mang, mở rộng",
+		"type": "v",
+		"phonetic": "/'brɔ:dn/"
+	},
+	{
+		"word": "brush up",
+		"definition": "ôn lại nhanh, học lại nhanh thứ gì",
+		"type": "structure",
+		"phonetic": ""
+	},
+	{
+		"word": "enrol on something",
+		"definition": "đăng ký cái gì",
+		"type": "structure",
+		"phonetic": ""
+	}
+      ]
+    },
+    {
+      "id": "tnthpt_unit1",
+      "title": "TNTHPT - Unit 1: Artificial Intelligence",
+      "flashcards": [
+        { "word": "Neural network", "definition": "Mạng nơ-ron", "type": "N", "phonetic": "/ˈnjʊərəl ˈnetwɜːk/" },
+        { "word": "Machine learning", "definition": "Học máy", "type": "N", "phonetic": "/məˈʃiːn ˈlɜːnɪŋ/" },
+        { "word": "Deep learning", "definition": "Học sâu", "type": "N", "phonetic": "/diːp ˈlɜːnɪŋ/" }
+      ]
+    },
+    {
+      "id": "tnthpt_unit2",
+      "title": "TNTHPT - Unit 2: Being Independent",
+      "flashcards": [
+        { "word": "Self-reliance", "definition": "Sự tự lực", "type": "N", "phonetic": "/ˌself rɪˈlaɪəns/" },
+        { "word": "Autonomy", "definition": "Quyền tự chủ", "type": "N", "phonetic": "/ɔːˈtɒnəmi/" },
+        { "word": "Accountability", "definition": "Trách nhiệm giải trình", "type": "N", "phonetic": "/əˌkaʊntəˈbɪləti/" }
+      ]
+    }
+  ]
+}
