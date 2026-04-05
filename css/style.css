@@ -1587,3 +1587,41 @@ h1 {
  background: rgba(255, 255, 255, 0.3);
  transform: scale(1.1);
 }
+.mode-select {
+    background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+    font-weight: 600;
+    appearance: none; /* Ẩn mũi tên mặc định để custom */
+    -webkit-appearance: none;
+    text-align: center;
+    text-align-last: center; /* Căn giữa option khi hiển thị */
+    width: auto;
+    min-width: 220px;
+}
+
+.mode-select:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(52, 152, 219, 0.4);
+}
+
+.mode-select option {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+    .mode-select {
+        font-size: 14px;
+        padding: 8px 16px;
+        min-width: 180px;
+    }
+}
